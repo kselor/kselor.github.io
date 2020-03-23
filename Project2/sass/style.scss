@@ -1,0 +1,33 @@
+* {
+    font-family: 'Museo Sans Cyrl', sans-serif;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: #0d0d0d;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.up-skroll {
+    position: fixed;
+    bottom: 25px;
+    right: 30px;
+    width: 50px;
+    z-index: 1000;
+    display: none;
+}
+
+@import '_header.scss';
+@import '_intro.scss';
+@import '_advantage.scss';
+@import '_consult.scss';
+@import '_button.scss';
+@import '_forms.scss';
+@import '_carousel.scss';
+@import '_catalog.scss';
+@import '_reviews.scss';
+@import '_footer.scss';
+@import '_modal.scss';

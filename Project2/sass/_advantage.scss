@@ -1,0 +1,32 @@
+.advantage {
+    background: #f6f6f6;
+    padding: 65px 0 78px;
+
+    &__inner {
+        padding: 65px 0 0;
+    }
+
+    .advantage-item {
+        text-align: center;
+
+        &__title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #0d0d0d;
+            margin-top: 38px;
+        }
+
+        &__text {
+            font-size: 14px;
+            font-weight: 300;
+            color: #0d0d0d;
+            margin-top: 25px;
+
+            span {
+                color: #c70101;
+            }
+        }
+
+    }
+
+}

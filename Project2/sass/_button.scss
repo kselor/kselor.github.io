@@ -1,0 +1,29 @@
+  .button {
+      width: 150px;
+      height: 30px;
+      border-radius: 5px;
+      background-color: #c70101;
+      font-size: 12px;
+      font-weight: 500;
+      text-align: center;
+      color: #fff;
+      text-transform: uppercase;
+      border: none;
+
+      &:hover {
+          background-color: #a70404;
+      }
+
+      &_request {
+          width: 300px;
+          height: 50px;
+          font-size: 16px;
+          border-radius: 5px;
+          background-color: #c70101;
+      }
+
+      &_catalog {
+          width: 131px;
+          height: 40px;
+      }
+  }
