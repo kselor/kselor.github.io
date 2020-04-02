@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Калькулятор</title>
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <secion class="calc">
+        <div class="container">
+            <h1 class="title">Калькулятор пластиковых окон</h1>
+            <div class="calc__inner">
+                <div class="row">
+                    <div class="col-md-2">
+                        <div class="calc__tab calc__tab_active">
+                            <img src="img/icon/c1.png" alt="" class="calc__tab-icon">
+                        </div>
+                        <div class="calc__tab">
+                            <img src="img/icon/c2.png" alt="" class="calc__tab-icon">
+                        </div>
+                        <div class="calc__tab">
+                            <img src="img/icon/c3.png" alt="" class="calc__tab-icon">
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-6">
+
+                        <div class="calc__items calc__items_active">
+                            <div class="calc-item">
+                                <img class="calc-item__img active" src="img/img/calc-window-blind.png" alt="Глухая">
+                                <img class="calc-item__img" src="img/img/calc-window-lu.png" alt="Поворотно/откидная вправо">
+                                <img class="calc-item__img" src="img/img/calc-window-ru.png" alt="Поворотно/откидная влево">
+                            </div>
+                        </div>
+
+                        <div class="calc__items">
+                            <div class="calc-item">
+                                <img class="calc-item__img active" src="img/img/calc-window-blind.png" alt="">
+                                <img class="calc-item__img" src="img/img/calc-window-lu.png" alt="">
+                                <img class="calc-item__img" src="img/img/calc-window-ru.png" alt="">
+                            </div>
+                            <div class="calc-item">
+                                <img class="calc-item__img active" src="img/img/calc-window-blind.png" alt="">
+                                <img class="calc-item__img" src="img/img/calc-window-lu.png" alt="">
+                                <img class="calc-item__img" src="img/img/calc-window-ru.png" alt="">
+                            </div>
+                        </div>
+
+                        <div class="calc__items">
+                            <div class="calc-item">
+                                <img class="calc-item__img active" src="img/img/calc-window-blind.png" alt="">
+                                <img class="calc-item__img" src="img/img/calc-window-lu.png" alt="">
+                                <img class="calc-item__img" src="img/img/calc-window-ru.png" alt="">
+                            </div>
+                            <div class="calc-item">
+                                <img class="calc-item__img active" src="img/img/calc-window-blind.png" alt="">
+                                <img class="calc-item__img" src="img/img/calc-window-lu.png" alt="">
+                                <img class="calc-item__img" src="img/img/calc-window-ru.png" alt="">
+                            </div>
+                            <div class="calc-item">
+                                <img class="calc-item__img active" src="img/img/calc-window-blind.png" alt="">
+                                <img class="calc-item__img" src="img/img/calc-window-lu.png" alt="">
+                                <img class="calc-item__img" src="img/img/calc-window-ru.png" alt="">
+                            </div>
+                        </div>
+
+                        <div class="calc__items_descr">
+                            <img src="img/icon/cursor.svg" alt="">Кликнете на свторку чтобы ее изменить
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="calc__option">
+                            <div class="option__title">
+                                <h2>Параметры</h2>
+                            </div>
+
+                            <div id="option_items" class="option-items">
+                                <div class="option-items__title">Размер</div>
+                                <div id="option_items_size" class="option-items__size">
+                                    <input id="option_size_width" placeholder="Ширина, мм" type="text">
+                                    <input id="option_size_height" placeholder="Высота, мм" type="text">
+                                </div>
+                            </div>
+
+                            <div id="option_items" class="option-items">
+                                <div class="option-items__title">Стеклопакет</div>
+                                <select class="option-item" name="" id="option_item_glass">
+                                    <option class="option-item__title">Не выбрано</option>
+                                    <option value="Двухкамерный стеклопакет">Двухкамерный стеклопакет</option>
+                                    <option value="Однокамерный стеклопакет">Однокамерный стеклопакет</option>
+                                    <option value="Двухкамерный энергосберегающий">Двухкамерный энергосберегающий</option>
+                                </select>
+                            </div>
+
+                            <div id="option_items" class="option-items">
+                                <div class="option-items__title">Цвет</div>
+                                <select class="option-item" name="" id="option_item_color">
+                                    <option class="option-item__title">Не выбрано</option>
+                                    <option value="Белый">Белый</option>
+                                    <option value="Цветной">Цветной</option>
+                                </select>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div id="calc-order" class="calc-order">
+                    <hr>
+                    <div class="calc-order__inner">
+
+                        <div class="calc-order__item">
+                            <div id="order_icon">
+                                <img class="calc-order__icon" src="img/icon/c1.png" alt="">
+                            </div>
+                            <div>
+                                <div id="order_title" class="calc-order__title">
+                                    Одностворчатое окно
+                                </div>
+                                <div id="calc_order_size" class="calc-order__size">1300 x 500 мм</div>
+                            </div>
+                        </div>
+
+                        <div id="order_descr" class="calc-order__descr">
+                            <div class="order_descr_type">
+                                Тип створок:
+                                <span id="order_type-1"></span>
+                                <span id="order_type-2"></span>
+                                <span id="order_type-3"></span>
+                            </div>
+                            <div class="order_descr_options">
+                                Параметры:
+                                <span id="order_descr_color">Белый</span>;&nbsp;<span id="order_descr_glass">Двухкамерный стеклопакет</span>.
+                            </div>
+
+                        </div>
+                        <div id="order_price" class="calc-order__price">от 11000 руб</div>
+
+                    </div>
+
+                    <hr>
+
+                </div>
+                <button class="btn">Получить расчет</button>
+
+            </div>
+        </div>
+    </secion>
+
+    <!--    modal    -->
+    <div class="overlay">
+        <div class="modal">
+            <div class="back"></div>
+            <div class="modal_title">Ваш заказ</div>
+            <div class="modal-order">
+
+            </div>
+            <div class="modal_request">
+                <div class="modal_request_title">Заполните форму заявки
+                    <br>
+                    <span>мы перезвоним вам в течении 10 минут</span></div>
+                <input placeholder="Ваше имя" type="text">
+                <input placeholder="Номер телефона" type="text">
+                <button class="btn">Отправить заявку</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body></html>
