@@ -1,0 +1,93 @@
+.footer {
+    background: linear-gradient(89.83deg, #0AAEE3 0.06%, #2B3180 99.94%);
+    box-shadow: 0px 2px 6px rgba(19, 43, 77, 0.5);
+    padding: 50px 0;
+    margin-top: 100px;
+
+    &_inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &_item {
+        margin-right: 70px;
+        width: 33.333%;
+
+        &:last-child{
+            margin-right: 0;
+        }
+    
+        &_title {
+            font-weight: bold;
+            font-size: 32px;
+            line-height: 39px;
+            text-align: center;
+            color: #FFFFFF;
+            text-align: left;
+            margin-bottom: 15px;
+            margin-top: 50px;
+        }
+    }
+
+    &_logo {
+        max-width: 350px;
+    }
+
+    &_descr {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FFFFFF;
+        margin-top: 20px;
+    }
+
+    .contacts {
+        margin-top: 50px;
+        text-align: left;
+        &_item {
+            display: flex;
+            
+            margin-top: 30px;    
+
+            &_icon {
+                width: 24px;
+                height: 24px;
+            }
+            
+            &_descr{
+                margin-left: 15px;
+            }
+
+            &_title {
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 22px;
+                color: #FFFFFF;
+            }
+
+            &_text {
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 20px;
+                color: #FFFFFF;
+            }
+        }
+    }
+
+
+    
+        .consalt_form{
+
+        &_name{
+            margin: 20px 0 0;
+        }
+
+        &_phone{
+            margin: 20px 0 0;
+        }
+
+        .btn{
+            margin-top: 30px;
+        }
+    }
+}

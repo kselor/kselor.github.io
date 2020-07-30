@@ -1,0 +1,33 @@
+.btn {
+    width: 420px;
+    height: 65px;
+    border: none;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 100px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #2B3180;
+    cursor: pointer;
+
+    &:hover{
+        background: #2B3180;
+        color: #FFFFFF;
+        transition: 0.2s;
+    }
+
+    &_count {
+        color: #FFFFFF;
+        background: none;
+        border: 2px solid #FFFFFF;
+        box-shadow: none;
+
+        &:hover{
+            background: #FFFFFF;
+            color: #2B3180;
+            transition: 0.2s;
+        }
+    }
+}

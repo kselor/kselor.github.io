@@ -1,0 +1,69 @@
+.header {
+    &_inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+        background: #ffffff;
+    }
+
+    &_logo {
+        max-width: 190px;
+    }
+
+    &_nav {
+        display: flex;
+        list-style: none;
+        padding: 0;
+
+        &_link {
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 22px;
+            text-align: center;
+            color: #132B4D;
+            padding: 0 20px;
+
+            &:hover {
+                color: #0A5DB9;
+                transition: 0.2s;
+            }
+        }
+    }
+
+    &_call {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        &_phone {
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 22px;
+            text-align: center;
+            color: #132B4D;
+            margin-bottom: 10px;
+
+            &:hover {
+                color: #0A5DB9;
+                transition: 0.2s;
+            }
+
+        }
+
+        &_btn {
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 17px;
+            text-align: center;
+            color: #0A5DB9;
+            text-decoration: none;
+            border: 1px solid #0A5DB9;
+            border-radius: 4px;
+            padding: 7px 25px;
+        }
+    }
+
+}
