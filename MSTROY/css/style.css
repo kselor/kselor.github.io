@@ -39,9 +39,9 @@ input:focus { border: 2px solid #2B3180; }
 .consalt_form input { width: 400px; height: 65px; border: none; background: #FFFFFF; border-radius: 10px; padding: 20px 25px; font-weight: 500; font-size: 20px; line-height: 24px; color: #6C83A1; }
 .consalt_form input:focus { border: 2px solid #2B3180; }
 .consalt_form_name { margin-right: 25px; position: relative; }
-.consalt_form_name:before { content: ''; width: 28px; height: 38px; background: url("/img/name.svg"); position: absolute; right: 25px; top: 50%; transform: translateY(-50%); z-index: 1; }
+.consalt_form_name:before { content: ''; width: 28px; height: 38px; background: url("../img/name.svg"); position: absolute; right: 25px; top: 50%; transform: translateY(-50%); z-index: 1; }
 .consalt_form_phone { margin-right: 25px; position: relative; }
-.consalt_form_phone:before { content: ''; width: 38px; height: 38px; background: url("/img/phone.svg"); position: absolute; right: 25px; top: 50%; transform: translateY(-50%); z-index: 1; }
+.consalt_form_phone:before { content: ''; width: 38px; height: 38px; background: url("../img/phone.svg"); position: absolute; right: 25px; top: 50%; transform: translateY(-50%); z-index: 1; }
 .consalt_politics { font-weight: 500; font-size: 14px; line-height: 17px; color: #9DBBE2; margin-top: 50px; }
 .consalt_politics a { text-decoration: none; color: #ffff; }
 
@@ -75,7 +75,7 @@ input:focus { border: 2px solid #2B3180; }
 .btn_count:hover { background: #FFFFFF; color: #2B3180; transition: 0.2s; }
 
 .slider_inner { position: relative; }
-.slider_inner:before { content: ''; width: 40px; height: 40px; background: url("/img/swipe.svg"); position: absolute; right: 0; top: 65px; z-index: 2; }
+.slider_inner:before { content: ''; width: 40px; height: 40px; background: url("../img/swipe.svg"); position: absolute; right: 0; top: 65px; z-index: 2; }
 .slider_item { margin-bottom: 40px; }
 .slider_item_title { font-weight: 600; font-size: 20px; line-height: 24px; text-align: center; color: #6C83A1; margin-bottom: 30px; }
 .slider_item_content { display: flex; justify-content: center; }
@@ -99,9 +99,9 @@ input:focus { border: 2px solid #2B3180; }
 .calculator_device_title { font-weight: bold; font-size: 24px; line-height: 29px; color: #FFFFFF; text-align: center; margin-bottom: 28px; }
 .calculator_device_descr { list-style: none; font-weight: 500; font-size: 16px; line-height: 20px; }
 .calculator_device_descr li { padding: 10px 0; color: rgba(255, 255, 255, 0.49); position: relative; }
-.calculator_device_descr li:before { content: ''; width: 20px; height: 20px; background: url("/img/check.svg"); position: absolute; top: 50%; transform: translateY(-50%); left: -30px; border-radius: 100%; z-index: 1; }
+.calculator_device_descr li:before { content: ''; width: 20px; height: 20px; background: url("../img/check.svg"); position: absolute; top: 50%; transform: translateY(-50%); left: -30px; border-radius: 100%; z-index: 1; }
 .calculator_device_descr li.active { color: #ffff; }
-.calculator_device_descr li.active:before { background: url("/img/check_active.svg"); }
+.calculator_device_descr li.active:before { background: url("../img/check_active.svg"); }
 .calculator-form { display: flex; flex-wrap: wrap; }
 .calculator-form_item { width: 50%; padding: 30px; }
 .calculator-form_item_title { font-weight: normal; font-size: 24px; line-height: 29px; color: #FFFFFF; margin-bottom: 15px; }

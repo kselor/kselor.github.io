@@ -70,7 +70,7 @@
                     content: '';
                     width: 20px;
                     height: 20px;
-                    background: url('/img/check.svg');
+                    background: url('../img/check.svg');
                     position: absolute;
                     top: 50%;
                     transform: translateY(-50%);
@@ -83,7 +83,7 @@
                     color: #ffff;
 
                     &:before {
-                        background: url('/img/check_active.svg');
+                        background: url('../img/check_active.svg');
                     }
                 }
             }
