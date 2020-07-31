@@ -1,10 +1,28 @@
 .header {
+    position: relative;
     &_inner {
         display: flex;
         justify-content: space-between;
         align-items: center;
         height: 100px;
         background: #ffffff;
+    }
+    
+    &_request{
+        width: 40px;
+        fill:#2B3180;
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+        cursor: pointer;
+        display: none;
+
+        &:hover{
+            fill:#7eb2ec;
+        }
+
     }
 
     &_logo {

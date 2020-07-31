@@ -4,6 +4,7 @@
     padding: 50px 0;
     margin-top: 100px;
 
+
     &_inner {
         display: flex;
         justify-content: space-between;
@@ -12,11 +13,12 @@
     &_item {
         margin-right: 70px;
         width: 33.333%;
+        position: relative;
 
-        &:last-child{
+        &:last-child {
             margin-right: 0;
         }
-    
+
         &_title {
             font-weight: bold;
             font-size: 32px;
@@ -27,10 +29,30 @@
             margin-bottom: 15px;
             margin-top: 50px;
         }
+
+        &_request {
+            width: 40px;
+            fill: #ffff;
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            display: none;
+
+            &:hover {
+                fill: #7eb2ec;
+            }
+
+        }
     }
 
     &_logo {
         max-width: 350px;
+
+        img {
+            width: 100%;
+        }
     }
 
     &_descr {
@@ -44,17 +66,18 @@
     .contacts {
         margin-top: 50px;
         text-align: left;
+
         &_item {
             display: flex;
-            
-            margin-top: 30px;    
+            align-items: center;
+            margin-top: 30px;
 
             &_icon {
                 width: 24px;
                 height: 24px;
             }
-            
-            &_descr{
+
+            &_descr {
                 margin-left: 15px;
             }
 
@@ -75,18 +98,14 @@
     }
 
 
-    
-        .consalt_form{
 
-        &_name{
+    .consalt_form {
+
+        .input-section {
             margin: 20px 0 0;
         }
 
-        &_phone{
-            margin: 20px 0 0;
-        }
-
-        .btn{
+        .btn {
             margin-top: 30px;
         }
     }

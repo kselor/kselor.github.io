@@ -1,0 +1,90 @@
+.modal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(168, 168, 168, 0.7);
+    z-index: 1000;
+    display: none;
+
+    &_request {
+        max-width: 450px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #ffff;
+
+        &_header {
+            display: flex;
+            align-items: center;
+            padding-left: 20px;
+            height: 90px;
+            background: linear-gradient(89.83deg, #0AAEE3 0.06%, #2B3180 99.94%);
+            font-weight: 500;
+            font-size: 26px;
+            line-height: 25px;
+            color: #FFFFFF;
+            position: relative;
+        }
+
+        &_back {
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 2;
+    
+            &:before {
+                content: '';
+                width: 30px;
+                height: 2px;
+                background: #FFFF;
+                position: absolute;
+                top: 50%;
+                z-index: 1;
+                transform: rotate(-45deg);
+            }
+    
+            &:after {
+                content: '';
+                width: 30px;
+                height: 2px;
+                background: #FFFF;
+                position: absolute;
+                top: 50%;
+                z-index: 1;
+                transform: rotate(45deg);
+            }
+        }
+    }
+
+    .consalt_form {
+        padding: 60px;
+        .input-section{
+            width: 100%;
+            margin-bottom: 30px;
+            border: 1px solid rgb(90, 87, 87);
+            border-radius: 10px;
+            input{
+                font-size: 18px;
+            }
+
+            // &.name{
+            //     &:before{
+                    
+            //     }
+            // }
+        }
+
+        .btn{
+            width: 250px;
+            margin-top: 30px;
+        }
+
+    }
+}

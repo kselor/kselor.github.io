@@ -3,13 +3,11 @@
         position: relative;
 
         &:before{
-            content:'';
-            width: 40px;
-            height: 40px;
-            background: url('../img/swipe.svg');
+            content: url('../img/swipe.svg');
             position: absolute;
+            fill:red;
             right: 0;
-            top:65px;
+            top: 100px;
             z-index: 2;
         }
     }
@@ -28,6 +26,7 @@
         &_content{
             display: flex;
             justify-content: center;
+            
         }
     }
 

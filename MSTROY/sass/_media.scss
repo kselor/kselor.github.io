@@ -1,0 +1,396 @@
+@media (max-width: 1200px) {
+
+    .btn {
+        width: 350px;
+    }
+
+    .intro_title {
+        font-size: 32px;
+    }
+
+    .intro_subtitle {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 991px) {
+
+    .header_nav {
+        display: none;
+    }
+
+    .intro_inner {
+        height: 700px;
+    }
+
+    .intro_title {
+        font-size: 30px;
+    }
+
+    .intro_subtitle {
+        font-size: 15px;
+    }
+
+    .btn {
+        width: 300px;
+        font-size: 18px;
+    }
+
+    .title {
+        font-size: 32px;
+    }
+
+    .consalt_form .input-section {
+        width: 300px;
+        margin-bottom: 20px;
+    }
+
+    .slider_item_descr {
+        display: none;
+    }
+
+    .calculator-order_request {
+        flex-direction: column;
+        align-items: center;
+
+        .input_container {
+            width: 430px;
+        }
+
+        .btn {
+            width: 430px;
+            margin-top: 20px;
+        }
+    }
+
+    .calculator-form_item_title {
+        font-size: 18px;
+    }
+
+    .calculator-form_item .check_slider span:before {
+        font-size: 18px;
+    }
+
+    .calculator-form_item .check_slider span:after {
+        font-size: 18px;
+    }
+
+    .calculator-order_price {
+        font-size: 32px;
+
+        span {
+            font-size: 18px;
+        }
+    }
+
+    .calculator-order_item {
+        font-size: 18px;
+    }
+
+    .calculator_device {
+        padding: 5px;
+
+        &_descr {
+            font-size: 14px;
+        }
+    }
+
+    .advantages_item {
+        flex-direction: column;
+        text-align: center;
+
+        &_icon {
+            margin-right: 0;
+            margin-bottom: 10px;
+        }
+    }
+
+    .reviews_inner {
+        margin-top: 0;
+        flex-wrap: wrap;
+    }
+
+    .reviews_item {
+        margin-top: 110px;
+        width: 100%;
+    }
+
+    .footer {
+
+        padding: 20px 0;
+
+        &_inner {
+            flex-wrap: wrap;
+        }
+
+        &_descr {
+            display: none;
+        }
+
+        &_item {
+            width: 100%;
+            margin-right: 0;
+
+            &_consalt {
+                display: none;
+            }
+
+            &_title {
+                display: none;
+            }
+
+            &_request {
+                display: block;
+            }
+        }
+
+        &_logo {
+            width: 200px;
+        }
+
+        .footer_item_title {
+            font-size: 25px;
+            margin-top: 0;
+        }
+
+        .contacts {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            border-top: 1px solid #fff;
+
+        }
+
+    }
+}
+
+@media (max-width: 767px) {
+
+    .intro {
+        &_inner {
+            height: 500px;
+        }
+
+        &_inner {
+            justify-content: center;
+
+        }
+
+        &_img {
+            display: none;
+        }
+
+        &_content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+    }
+
+    .consalt_form {
+        .input-section {
+            width: 100%;
+
+        }
+
+        .input-section {
+            width: 100%;
+        }
+
+    }
+
+    .slider_item_content {
+        img {
+            width: 100%;
+        }
+    }
+
+    .slider_item_title {
+        text-align: left;
+        font-size: 18px;
+    }
+
+    .slider_dot {
+        display: none;
+    }
+
+    .slider_dot.active {
+        display: block;
+        width: 100%;
+    }
+
+
+    .calculator {
+        &_devices {
+            flex-wrap: wrap;
+        }
+
+        &_device {
+            width: 100%;
+
+            &_title {
+                text-align: left;
+                margin-bottom: 10px;
+                margin-left: 40px;
+            }
+        }
+
+        &-form {
+
+            &_item {
+                width: 100%;
+                padding: 15px;
+
+                .check_slider {
+                    margin-top: 10px;
+                }
+
+            }
+        }
+
+        .calculator-form_item .check_slider span::before {
+            left: -80px;
+        }
+
+        .calculator-form_item .check_slider span::after {
+            content: 'Покупка';
+        }
+    }
+
+    .advantages_inner {
+        flex-wrap: wrap;
+    }
+
+    .advantages_item {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .footer {
+        .contacts_item_text {
+            font-size: 14px;
+        }
+
+    }
+}
+
+@media (max-width: 575px) {
+
+    .intro_content {
+        text-align: center;
+    }
+
+    .intro_subtitle {
+        margin-bottom: 20px;
+    }
+
+    .intro_title {
+        margin-bottom: 20px;
+        font-size: 26px;
+    }
+
+    .title {
+        margin: 30px 0;
+        font-size: 26px;
+    }
+
+    .partners_inner {
+        justify-content: center;
+    }
+
+    .partners_item {
+        display: none;
+
+        &:last-child {
+            display: block;
+        }
+    }
+
+    .calculator {
+
+        &_section_title {
+            text-align: center;
+            font-size: 18px;
+        }
+
+        &-order {
+            flex-direction: column;
+
+            &_items {
+                width: 100%;
+            }
+
+            &_item {
+                font-size: 16px;
+            }
+
+            &_price {
+                margin-top: 15px;
+            }
+
+            &_request {
+                margin-top: 40px;
+            }
+
+
+        }
+
+        &-order_request {
+            .input_container {
+                width: 100%;
+            }
+
+            .btn {
+                width: 100%;
+                font-size: 16px;
+            }
+        }
+
+    }
+
+    .header_call {
+        display: none;
+    }
+
+    .header_request {
+        display: block;
+    }
+
+    .reviews_item {
+        padding: 80px 10px 40px 10px;
+        height: 100%;
+    }
+
+    .footer {
+        .contacts_item {
+            margin-top: 10px;
+
+            &:last-child {
+                display: none;
+            }
+
+            &_title {
+                display: none;
+            }
+        }
+
+        .contacts {
+            flex-direction: column;
+        }
+    }
+
+    .consalt_form .input-section{
+        margin: 0 0 20px 0;
+    }
+
+    input {
+        font-size: 14px;
+    }
+
+    .modal_request{
+        width: 100%;
+    }
+
+}

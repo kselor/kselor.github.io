@@ -10,6 +10,22 @@
         align-items: center;
     }
 
+    &_content {
+        width: 50%;
+    }
+
+    .btn_count {
+        margin-bottom: 30px;
+    }
+
+    &_img {
+        width: 50%;
+
+        img {
+            width: 100%;
+        }
+    }
+
     &_title {
         font-weight: bold;
         font-size: 36px;
@@ -24,10 +40,6 @@
         line-height: 24px;
         color: #F1ECEC;
         margin-bottom: 60px;
-    }
-
-    .btn_count {
-        margin-bottom: 30px;
     }
 
     &_scroll {
@@ -95,54 +107,32 @@
         justify-content: center;
         flex-wrap: wrap;
 
-        input {
+
+        .input-section {
             width: 400px;
-            height: 65px;
-            border: none;
-            background: #FFFFFF;
-            border-radius: 10px;
-            padding: 20px 25px;
-            font-weight: 500;
-            font-size: 20px;
-            line-height: 24px;
-            color: #6C83A1;
-
-            &:focus {
-                border: 2px solid #2B3180;
-            }
-        }
-
-        &_name {
-            margin-right: 25px;
+            margin: 0 15px;
             position: relative;
 
-            &:before {
-                content: '';
-                width: 28px;
-                height: 38px;
-                background: url('../img/name.svg');
-                position: absolute;
-                right: 25px;
-                top: 50%;
-                transform: translateY(-50%);
-                z-index: 1;
+            &.name {
+                &:before {
+                    content: url('../img/name.svg');
+                    position: absolute;
+                    right: 20px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    z-index: 1;
+                }
             }
-        }
 
-        &_phone {
-            margin-right: 25px;
-            position: relative;
-
-            &:before {
-                content: '';
-                width: 38px;
-                height: 38px;
-                background: url('../img/phone.svg');
-                position: absolute;
-                right: 25px;
-                top: 50%;
-                transform: translateY(-50%);
-                z-index: 1;
+            &.phone {
+                &:before {
+                    content: url('../img/phone.svg');
+                    position: absolute;
+                    right: 20px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    z-index: 1;
+                }
             }
         }
     }
@@ -301,4 +291,3 @@
 
 
 }
-

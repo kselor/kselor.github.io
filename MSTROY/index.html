@@ -14,6 +14,18 @@
 <body>
 
     <header class="header">
+        <div class="header_request btn_consalt"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+                style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                <path d="M256,32c123.5,0,224,100.5,224,224S379.5,480,256,480S32,379.5,32,256S132.5,32,256,32 M256,0C114.625,0,0,114.625,0,256
+           s114.625,256,256,256s256-114.625,256-256S397.375,0,256,0L256,0z M398.719,341.594l-1.438-4.375
+           c-3.375-10.062-14.5-20.562-24.75-23.375L334.688,303.5c-10.25-2.781-24.875,0.969-32.405,8.5l-13.688,13.688
+           c-49.75-13.469-88.781-52.5-102.219-102.25l13.688-13.688c7.5-7.5,11.25-22.125,8.469-32.406L198.219,139.5
+           c-2.781-10.25-13.344-21.375-23.406-24.75l-4.313-1.438c-10.094-3.375-24.5,0.031-32,7.563l-20.5,20.5
+           c-3.656,3.625-6,14.031-6,14.063c-0.688,65.063,24.813,127.719,70.813,173.75c45.875,45.875,108.313,71.345,173.156,70.781
+           c0.344,0,11.063-2.281,14.719-5.938l20.5-20.5C398.688,366.062,402.062,351.656,398.719,341.594z" />
+            </svg>
+        </div>
         <div class="container">
             <div class="header_inner">
                 <a href="#"><img class="header_logo" src="img/logo.png" alt=""></a>
@@ -27,7 +39,7 @@
                 </nav>
                 <div class="header_call">
                     <a href="" class="header_call_phone">+7 (999) 000-00-00</a>
-                    <a href="" class="header_call_btn">Заказать звонок</a>
+                    <a href="" class="header_call_btn btn_consalt">Заказать звонок</a>
                 </div>
             </div>
         </div>
@@ -44,12 +56,14 @@
                         Узнай сколько реально работают сотрудники
                         <br> на стройплощадке
                     </div>
-                    <button class="btn btn_count">Рассчитать стоимость</button>
-                    <button class="btn">Получить консультацию</button>
+                    <button class="btn_count btn">Рассчитать стоимость</button>
+                    <button class="btn_consalt btn">Получить консультацию</button>
                 </div>
                 <div class="intro_img"><img src="img/intro_img.png" alt=""></div>
             </div>
-            <a href="#system"><div class="intro_scroll"></div></a>
+            <a href="#system">
+                <div class="intro_scroll"></div>
+            </a>
         </div>
         </div>
     </section>
@@ -68,23 +82,23 @@
                     <h2 class="title">Обзор платформы</h2>
 
                     <div class="slider_items">
-                    <div class="slider_item">
-                        <div class="slider_item_title">Алгоритм расчета рабочего времени</div>
-                        <div class="slider_item_content"><img src="img/slide_platform1.png" alt=""></div>
+                        <div class="slider_item">
+                            <div class="slider_item_title">Алгоритм расчета рабочего времени</div>
+                            <div class="slider_item_content"><img src="img/slide_platform1.png" alt=""></div>
+                        </div>
+                        <div class="slider_item">
+                            <div class="slider_item_title">Алгоритм расчета рабочего времени</div>
+                            <div class="slider_item_content"><img src="img/slide_platform1.png" alt=""></div>
+                        </div>
+                        <div class="slider_item">
+                            <div class="slider_item_title">Алгоритм расчета рабочего времени</div>
+                            <div class="slider_item_content"><img src="img/slide_platform1.png" alt=""></div>
+                        </div>
+                        <div class="slider_item">
+                            <div class="slider_item_title">Алгоритм расчета рабочего времени</div>
+                            <div class="slider_item_content"><img src="img/slide_platform1.png" alt=""></div>
+                        </div>
                     </div>
-                    <div class="slider_item">
-                        <div class="slider_item_title">Алгоритм расчета рабочего времени</div>
-                        <div class="slider_item_content"><img src="img/slide_platform1.png" alt=""></div>
-                    </div>
-                    <div class="slider_item">
-                        <div class="slider_item_title">Алгоритм расчета рабочего времени</div>
-                        <div class="slider_item_content"><img src="img/slide_platform1.png" alt=""></div>
-                    </div>
-                    <div class="slider_item">
-                        <div class="slider_item_title">Алгоритм расчета рабочего времени</div>
-                        <div class="slider_item_content"><img src="img/slide_platform1.png" alt=""></div>
-                    </div>
-                </div>
                     <div class="slider_dots">
                         <div class="slider_dot active">Алгоритм расчета
                             <br> рабочего времени</div>
@@ -105,11 +119,11 @@
             <div class="consalt_inner">
                 <h2 class="title">Оставте заявку на консультацию</h2>
                 <form class="consalt_form" action="#">
-                    <div class="consalt_form_name">
+                    <div class="input-section name">
                         <input placeholder="Ваше имя" type="text">
                     </div>
-                    <div class="consalt_form_phone">
-                        <input placeholder="Номер телефона" type="text">
+                    <div class="input-section phone">
+                        <input placeholder="Номер телефона" type="text" name="phone">
                     </div>
                     <button class="btn">ОТПРАВИТЬ</button>
                 </form>
@@ -127,111 +141,111 @@
                     <h2 class="title">Оборудование</h2>
 
                     <div class="slider_items">
-                    <div class="slider_item">
-                        <div class="slider_item_title">Инфокиоск</div>
-                        <div class="slider_item_content">
-                            <img class="slider_item_img" src="img/infokiosk.png" alt="">
-                            <div class="slider_item_descr">
-                                Инфокиоск - (киоск самообслуживания) предназначен для предоставления пользователю
-                                различной информации без привлечения обслуживающего персонала.
-                                <ul>
-                                    <span>Основные возможности:</span>
-                                    <li>Автоматизированная выдача, зарядка и обслуживание устройств мониторинга
-                                    </li>
-                                    <li>Самостоятельный просмотр табеля рабочим, без участия ИТР
-                                    </li>
-                                    <li>Печать технической документации для производства работ
-                                    </li>
-                                    <li>Получение заданий на работы от линейного ИТР
-                                    </li>
-                                    <li>Отправка заявок на проведение инспекций и вызов строительного контроля
-                                    </li>
-                                    <li>Просмотр справочной информации по выполняемым видам работ</li>
-                                </ul>
+                        <div class="slider_item">
+                            <div class="slider_item_title">Инфокиоск</div>
+                            <div class="slider_item_content">
+                                <img class="slider_item_img" src="img/infokiosk.png" alt="">
+                                <div class="slider_item_descr">
+                                    Инфокиоск - (киоск самообслуживания) предназначен для предоставления пользователю
+                                    различной информации без привлечения обслуживающего персонала.
+                                    <ul>
+                                        <span>Основные возможности:</span>
+                                        <li>Автоматизированная выдача, зарядка и обслуживание устройств мониторинга
+                                        </li>
+                                        <li>Самостоятельный просмотр табеля рабочим, без участия ИТР
+                                        </li>
+                                        <li>Печать технической документации для производства работ
+                                        </li>
+                                        <li>Получение заданий на работы от линейного ИТР
+                                        </li>
+                                        <li>Отправка заявок на проведение инспекций и вызов строительного контроля
+                                        </li>
+                                        <li>Просмотр справочной информации по выполняемым видам работ</li>
+                                    </ul>
 
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="slider_item">
-                        <div class="slider_item_title">Инфокиоск</div>
-                        <div class="slider_item_content">
-                            <img class="slider_item_img" src="img/infokiosk.png" alt="">
-                            <div class="slider_item_descr">
-                                Инфокиоск - (киоск самообслуживания) предназначен для предоставления пользователю
-                                различной информации без привлечения обслуживающего персонала.
-                                <ul>
-                                    <span>Основные возможности:</span>
-                                    <li>Автоматизированная выдача, зарядка и обслуживание устройств мониторинга
-                                    </li>
-                                    <li>Самостоятельный просмотр табеля рабочим, без участия ИТР
-                                    </li>
-                                    <li>Печать технической документации для производства работ
-                                    </li>
-                                    <li>Получение заданий на работы от линейного ИТР
-                                    </li>
-                                    <li>Отправка заявок на проведение инспекций и вызов строительного контроля
-                                    </li>
-                                    <li>Просмотр справочной информации по выполняемым видам работ</li>
-                                </ul>
+                        <div class="slider_item">
+                            <div class="slider_item_title">Инфокиоск</div>
+                            <div class="slider_item_content">
+                                <img class="slider_item_img" src="img/infokiosk.png" alt="">
+                                <div class="slider_item_descr">
+                                    Инфокиоск - (киоск самообслуживания) предназначен для предоставления пользователю
+                                    различной информации без привлечения обслуживающего персонала.
+                                    <ul>
+                                        <span>Основные возможности:</span>
+                                        <li>Автоматизированная выдача, зарядка и обслуживание устройств мониторинга
+                                        </li>
+                                        <li>Самостоятельный просмотр табеля рабочим, без участия ИТР
+                                        </li>
+                                        <li>Печать технической документации для производства работ
+                                        </li>
+                                        <li>Получение заданий на работы от линейного ИТР
+                                        </li>
+                                        <li>Отправка заявок на проведение инспекций и вызов строительного контроля
+                                        </li>
+                                        <li>Просмотр справочной информации по выполняемым видам работ</li>
+                                    </ul>
 
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="slider_item">
-                        <div class="slider_item_title">Инфокиоск</div>
-                        <div class="slider_item_content">
-                            <img class="slider_item_img" src="img/infokiosk.png" alt="">
-                            <div class="slider_item_descr">
-                                Инфокиоск - (киоск самообслуживания) предназначен для предоставления пользователю
-                                различной информации без привлечения обслуживающего персонала.
-                                <ul>
-                                    <span>Основные возможности:</span>
-                                    <li>Автоматизированная выдача, зарядка и обслуживание устройств мониторинга
-                                    </li>
-                                    <li>Самостоятельный просмотр табеля рабочим, без участия ИТР
-                                    </li>
-                                    <li>Печать технической документации для производства работ
-                                    </li>
-                                    <li>Получение заданий на работы от линейного ИТР
-                                    </li>
-                                    <li>Отправка заявок на проведение инспекций и вызов строительного контроля
-                                    </li>
-                                    <li>Просмотр справочной информации по выполняемым видам работ</li>
-                                </ul>
+                        <div class="slider_item">
+                            <div class="slider_item_title">Инфокиоск</div>
+                            <div class="slider_item_content">
+                                <img class="slider_item_img" src="img/infokiosk.png" alt="">
+                                <div class="slider_item_descr">
+                                    Инфокиоск - (киоск самообслуживания) предназначен для предоставления пользователю
+                                    различной информации без привлечения обслуживающего персонала.
+                                    <ul>
+                                        <span>Основные возможности:</span>
+                                        <li>Автоматизированная выдача, зарядка и обслуживание устройств мониторинга
+                                        </li>
+                                        <li>Самостоятельный просмотр табеля рабочим, без участия ИТР
+                                        </li>
+                                        <li>Печать технической документации для производства работ
+                                        </li>
+                                        <li>Получение заданий на работы от линейного ИТР
+                                        </li>
+                                        <li>Отправка заявок на проведение инспекций и вызов строительного контроля
+                                        </li>
+                                        <li>Просмотр справочной информации по выполняемым видам работ</li>
+                                    </ul>
 
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="slider_item">
-                        <div class="slider_item_title">Инфокиоск</div>
-                        <div class="slider_item_content">
-                            <img class="slider_item_img" src="img/infokiosk.png" alt="">
-                            <div class="slider_item_descr">
-                                Инфокиоск - (киоск самообслуживания) предназначен для предоставления пользователю
-                                различной информации без привлечения обслуживающего персонала.
-                                <ul>
-                                    <span>Основные возможности:</span>
-                                    <li>Автоматизированная выдача, зарядка и обслуживание устройств мониторинга
-                                    </li>
-                                    <li>Самостоятельный просмотр табеля рабочим, без участия ИТР
-                                    </li>
-                                    <li>Печать технической документации для производства работ
-                                    </li>
-                                    <li>Получение заданий на работы от линейного ИТР
-                                    </li>
-                                    <li>Отправка заявок на проведение инспекций и вызов строительного контроля
-                                    </li>
-                                    <li>Просмотр справочной информации по выполняемым видам работ</li>
-                                </ul>
+                        <div class="slider_item">
+                            <div class="slider_item_title">Инфокиоск</div>
+                            <div class="slider_item_content">
+                                <img class="slider_item_img" src="img/infokiosk.png" alt="">
+                                <div class="slider_item_descr">
+                                    Инфокиоск - (киоск самообслуживания) предназначен для предоставления пользователю
+                                    различной информации без привлечения обслуживающего персонала.
+                                    <ul>
+                                        <span>Основные возможности:</span>
+                                        <li>Автоматизированная выдача, зарядка и обслуживание устройств мониторинга
+                                        </li>
+                                        <li>Самостоятельный просмотр табеля рабочим, без участия ИТР
+                                        </li>
+                                        <li>Печать технической документации для производства работ
+                                        </li>
+                                        <li>Получение заданий на работы от линейного ИТР
+                                        </li>
+                                        <li>Отправка заявок на проведение инспекций и вызов строительного контроля
+                                        </li>
+                                        <li>Просмотр справочной информации по выполняемым видам работ</li>
+                                    </ul>
 
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                </div>
+                    </div>
 
                     <div class="slider_dots">
                         <div class="slider_dot active">Алгоритм расчета
@@ -286,15 +300,21 @@
                         <form class="calculator-form" action="#">
                             <div class="calculator-form_item">
                                 <div class="calculator-form_item_title">Количество строительных площадок</div>
-                                <input placeholder="Введите количество" type="text">
+                                <div class="input_container">
+                                    <input placeholder="Введите количество" type="text">
+                                </div>
                             </div>
                             <div class="calculator-form_item">
                                 <div class="calculator-form_item_title">Площадь строительных площадок</div>
-                                <input placeholder="Введите количество" type="text">
+                                <div class="input_container space">
+                                    <input placeholder="Введите площадь" type="text">
+                                </div>
                             </div>
                             <div class="calculator-form_item">
                                 <div class="calculator-form_item_title">Количество работников</div>
-                                <input placeholder="Введите площадь" type="text">
+                                <div class="input_container person">
+                                    <input placeholder="Введите количество" type="text">
+                                </div>
                             </div>
                             <div class="calculator-form_item">
                                 <div class="calculator-form_item_check">
@@ -332,7 +352,9 @@
                             </div>
                         </div>
                         <div class="calculator-order_request">
-                            <input placeholder="введите email" type="text">
+                            <div class="input_container email">
+                                <input placeholder="введите email" type="text">
+                            </div>
                             <button class="btn">Получить коммерческое предложение</button>
                         </div>
                     </div>
@@ -426,6 +448,19 @@
             <div class="footer_inner">
 
                 <div class="footer_item">
+                    <div class="footer_item_request btn_consalt"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+                            style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                            <path
+                                d="M256,32c123.5,0,224,100.5,224,224S379.5,480,256,480S32,379.5,32,256S132.5,32,256,32 M256,0C114.625,0,0,114.625,0,256
+                           s114.625,256,256,256s256-114.625,256-256S397.375,0,256,0L256,0z M398.719,341.594l-1.438-4.375
+                           c-3.375-10.062-14.5-20.562-24.75-23.375L334.688,303.5c-10.25-2.781-24.875,0.969-32.405,8.5l-13.688,13.688
+                           c-49.75-13.469-88.781-52.5-102.219-102.25l13.688-13.688c7.5-7.5,11.25-22.125,8.469-32.406L198.219,139.5
+                           c-2.781-10.25-13.344-21.375-23.406-24.75l-4.313-1.438c-10.094-3.375-24.5,0.031-32,7.563l-20.5,20.5
+                           c-3.656,3.625-6,14.031-6,14.063c-0.688,65.063,24.813,127.719,70.813,173.75c45.875,45.875,108.313,71.345,173.156,70.781
+                           c0.344,0,11.063-2.281,14.719-5.938l20.5-20.5C398.688,366.062,402.062,351.656,398.719,341.594z" />
+                        </svg>
+                    </div>
                     <div class="footer_logo"><img src="img/footer_logo.png" alt=""></div>
                     <div class="footer_descr">Программный комплекс MStroy (платформа цифрового строительства)
                         предназначен для управления строительными проектами. Платформа включает в себя онлайн сервис,
@@ -438,21 +473,51 @@
                     <div class="contacts">
                         <h2 class="footer_item_title">Наши контакты</h2>
                         <div class="contacts_item">
-                            <img class="contacts_item_icon" src="img/address_icon.png" alt="">
+                            <div class="contacts_item_icon">
+                                <svg width="18" height="26" viewBox="0 0 18 26" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.2638 23.1497L7.26391 23.1499L8.38391 24.8525C8.38392 24.8525 8.38392 24.8525 8.38393 24.8526C8.54298 25.0944 8.81271 25.2402 9.1022 25.2402C9.39169 25.2402 9.66143 25.0944 9.82048 24.8526C9.82048 24.8525 9.82049 24.8525 9.82049 24.8525L10.9405 23.15L10.7316 23.0126L10.9405 23.15C11.0065 23.0495 12.5487 20.7008 14.1219 17.8735C15.2655 15.8182 16.1075 14.0937 16.6641 12.6516C17.2197 11.2122 17.4974 10.0382 17.4974 9.08857C17.4974 4.44671 13.7322 0.669434 9.1022 0.669434C4.47221 0.669434 0.707031 4.44671 0.707031 9.08857C0.707031 10.0381 0.984695 11.2121 1.54026 12.6514C2.0969 14.0935 2.93894 15.8181 4.08254 17.8735L4.301 17.7519L4.08254 17.8735C5.64371 20.6792 7.19717 23.0482 7.2638 23.1497ZM9.50407 22.2008L9.50401 22.2009L9.10221 22.8117L8.7007 22.2013C8.63781 22.1056 7.11602 19.7848 5.58524 17.0338C4.53013 15.1374 3.73841 13.5185 3.2111 12.1847C2.68156 10.8453 2.42758 9.81504 2.42758 9.08857C2.42758 5.39647 5.42269 2.39358 9.1022 2.39358C12.7817 2.39358 15.7768 5.39647 15.7768 9.08857C15.7768 9.81514 15.5228 10.8454 14.9933 12.1848C14.466 13.5186 13.6743 15.1375 12.6192 17.0338C11.0766 19.806 9.56644 22.1061 9.50407 22.2008Z"
+                                        fill="white" stroke="white" stroke-width="0.5" />
+                                    <path
+                                        d="M9.1022 4.25781C6.47328 4.25781 4.33618 6.40234 4.33618 9.03718C4.33618 11.672 6.47328 13.8166 9.1022 13.8166C11.7311 13.8166 13.8682 11.672 13.8682 9.03718C13.8682 6.40234 11.7311 4.25781 9.1022 4.25781ZM9.1022 12.0924C7.42382 12.0924 6.05673 10.7223 6.05673 9.03718C6.05673 7.35204 7.42382 5.98197 9.1022 5.98197C10.7806 5.98197 12.1477 7.35204 12.1477 9.03718C12.1477 10.7223 10.7806 12.0924 9.1022 12.0924Z"
+                                        fill="white" stroke="white" stroke-width="0.5" />
+                                </svg>
+                            </div>
                             <div class="contacts_item_descr">
                                 <div class="contacts_item_title">Адрес</div>
                                 <div class="contacts_item_text">Тюмень, ул. Кузнецова д. 15/1</div>
                             </div>
                         </div>
                         <div class="contacts_item">
-                            <img class="contacts_item_icon" src="img/phone_icon.png" alt="">
+                            <div class="contacts_item_icon">
+                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12.5624 3.0114C12.5782 3.0114 12.5936 3.0113 12.6093 3.0113C14.894 3.0113 17.0349 3.89718 18.6415 5.50844C20.2613 7.133 21.1474 9.29838 21.1364 11.6056C21.134 12.1249 21.5517 12.5478 22.0694 12.5503C22.071 12.5503 22.0724 12.5503 22.074 12.5503C22.5896 12.5503 23.0089 12.1323 23.0114 11.6146C23.0247 8.80157 21.9436 6.16086 19.9673 4.17873C18.0063 2.21202 15.3952 1.13086 12.6096 1.13086C12.5925 1.13086 12.5752 1.13091 12.5581 1.13095C12.0403 1.13344 11.6226 1.5564 11.625 2.07564C11.6275 2.59337 12.0467 3.0114 12.5624 3.0114Z"
+                                        fill="white" />
+                                    <path
+                                        d="M23.9977 19.5342C23.9642 18.6031 23.5775 17.7341 22.9088 17.0875C21.5996 15.8213 20.5026 15.0903 19.4567 14.7872C18.0153 14.3694 16.6804 14.7493 15.4891 15.9162C15.4873 15.918 15.4855 15.9198 15.4837 15.9215L14.215 17.1846C13.427 16.7406 11.8951 15.7635 10.2196 14.083L10.0963 13.9594C8.43181 12.2901 7.45141 10.745 7.00535 9.95137L8.26343 8.68008C8.26521 8.67829 8.26695 8.6765 8.26873 8.67467C9.43222 7.47987 9.81102 6.14102 9.39448 4.69546C9.09223 3.64645 8.36346 2.54624 7.10093 1.23311C6.45616 0.562462 5.58981 0.174602 4.66154 0.141034C3.73346 0.107514 2.84128 0.431624 2.14992 1.05408L2.12302 1.07834C2.1105 1.08958 2.09831 1.10119 2.08645 1.11308C0.710197 2.4933 -0.011212 4.42565 0.000131747 6.70114C0.0193506 10.5666 2.13759 14.9872 5.66636 18.5263C5.66931 18.5293 5.67222 18.5322 5.67517 18.5351C6.33855 19.1995 7.09174 19.8569 7.91402 20.4893C8.32489 20.8053 8.91336 20.7273 9.22845 20.3152C9.5435 19.9031 9.46583 19.3129 9.05492 18.9969C8.29385 18.4117 7.59987 17.8059 6.99222 17.1965C6.98932 17.1936 6.98641 17.1907 6.98346 17.1878C3.80133 13.9927 1.89192 10.0697 1.87509 6.69169C1.86637 4.93922 2.39199 3.47649 3.3953 2.45983L3.40247 2.45334C4.08395 1.83991 5.11567 1.87724 5.7513 2.53834C8.17854 5.06287 8.00276 6.2547 6.93025 7.35773L5.1924 9.11382C4.91987 9.38923 4.84398 9.80426 5.00139 10.1587C5.0455 10.2581 6.11275 12.6235 8.77081 15.2894L8.89419 15.413C11.5519 18.0786 13.9103 19.149 14.0094 19.1933C14.3629 19.3512 14.7767 19.275 15.0513 19.0017L16.8019 17.259C17.9019 16.1832 19.0902 16.0066 21.6074 18.4411C22.2666 19.0786 22.3038 20.1134 21.6923 20.7967L21.6857 20.8041C20.6802 21.8022 19.2373 22.3289 17.509 22.3289C17.4948 22.3289 17.4805 22.3289 17.4663 22.3288C16.0848 22.3219 14.4851 21.9421 12.8402 21.2305C12.3648 21.0248 11.8131 21.2446 11.608 21.7215C11.4029 22.1983 11.6221 22.7516 12.0975 22.9572C13.9989 23.7798 15.802 24.201 17.4569 24.2094C17.4745 24.2094 17.4919 24.2094 17.5095 24.2094C19.7554 24.2094 21.663 23.4864 23.0285 22.1169C23.0404 22.1049 23.0519 22.0928 23.0631 22.0802L23.0874 22.0531C23.7079 21.3598 24.0312 20.4652 23.9977 19.5342Z"
+                                        fill="white" />
+                                    <path
+                                        d="M17.3184 6.84064C16.3128 5.83198 15.3476 5.56432 14.8837 5.43564C14.3845 5.29718 13.8683 5.59074 13.7303 6.09131C13.5923 6.59184 13.8849 7.1098 14.384 7.24822C14.7633 7.35344 15.3365 7.51244 15.9925 8.17042C16.6241 8.80386 16.7919 9.37571 16.9029 9.75413L16.9165 9.80016C17.0371 10.2091 17.4104 10.4738 17.815 10.4738C17.9031 10.4739 17.9928 10.4613 18.0815 10.4349C18.578 10.2875 18.8614 9.76433 18.7144 9.26639L18.7017 9.22323C18.557 8.73042 18.2879 7.81306 17.3184 6.84064Z"
+                                        fill="white" />
+                                </svg>
+                            </div>
                             <div class="contacts_item_descr">
                                 <div class="contacts_item_title">Телефон</div>
                                 <div class="contacts_item_text">+7 (999) 000-00-00</div>
                             </div>
                         </div>
                         <div class="contacts_item">
-                            <img class="contacts_item_icon" src="img/email_icon.png" alt="">
+                            <div class="contacts_item_icon">
+                                <svg width="26" height="18" viewBox="0 0 26 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12.4422 8.63589L3.44082 1.86466H22.5591L13.5577 8.63588L13.5563 8.63694C13.4354 8.72925 13.227 8.79961 13.0011 8.79858L12.9988 8.79859C12.7729 8.79961 12.5646 8.72926 12.4436 8.63692L12.4422 8.63589ZM17.9851 9.46913L17.9851 9.46915L22.9013 15.5598H3.09864L8.01483 9.46915L8.0149 9.46908C8.2615 9.16331 8.21489 8.71494 7.90921 8.46686L7.90917 8.46683C7.60373 8.21906 7.15548 8.26595 6.9082 8.57245C6.90818 8.57248 6.90816 8.5725 6.90814 8.57253L2.17306 14.4388V2.69415L11.5881 9.77598L11.5888 9.77649C12.0081 10.0897 12.5118 10.2229 12.9992 10.2243L13.0004 10.2243C13.4873 10.2233 13.9914 10.09 14.411 9.77646L14.4117 9.77598L23.8267 2.69415V14.4387L19.0917 8.5725C18.8447 8.26625 18.3963 8.21886 18.0909 8.4667C17.7849 8.71448 17.7384 9.16342 17.9851 9.46913ZM23.7692 0.438965H2.23079C1.41508 0.438965 0.75 1.10701 0.75 1.92329V15.5011C0.75 16.3173 1.41506 16.9855 2.23079 16.9855H23.7692C24.5848 16.9855 25.25 16.3174 25.25 15.5011V1.92329C25.2499 1.10701 24.5849 0.438965 23.7692 0.438965Z"
+                                        fill="white" stroke="white" stroke-width="0.5" />
+                                </svg>
+                            </div>
                             <div class="contacts_item_descr">
                                 <div class="contacts_item_title">Email</div>
                                 <div class="contacts_item_text">status@mstroy.tech</div>
@@ -462,26 +527,50 @@
                 </div>
 
                 <div class="footer_item">
-
-                    <h2 class="footer_item_title">Консультация</h2>
-                    <form class="consalt_form" action="#">
-                        <div class="consalt_form_name">
-                            <input placeholder="Ваше имя" type="text">
-                        </div>
-                        <div class="consalt_form_phone">
-                            <input placeholder="Номер телефона" type="text">
-                        </div>
-                        <button class="btn">ОТПРАВИТЬ</button>
-                    </form>
-
+                    <div class="footer_item_consalt">
+                        <h2 class="footer_item_title">Консультация</h2>
+                        <form class="consalt_form" action="#">
+                            <div class="input-section name">
+                                <input placeholder="Ваше имя" type="text">
+                            </div>
+                            <div class="input-section phone">
+                                <input placeholder="Номер телефона" type="text" name="phone">
+                            </div>
+                            <button class="btn">ОТПРАВИТЬ</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
 
+    <!-- modal -->
+
+    <div class="modal">
+        <div class="modal_request">
+            <div class="modal_request_header">
+                Заказать звонок
+                <div class="modal_request_back"></div>
+            </div>
+            <form class="consalt_form" action="#">
+                <div class="input-section name">
+                    <input placeholder="Ваше имя" type="text">
+                </div>
+                <div class="input-section phone">
+                    <input placeholder="Номер телефона" type="text" name="phone">
+                </div>
+                <button class="btn">ОТПРАВИТЬ</button>
+            </form>
+        </div>
+
+    </div>
+
+
+
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 

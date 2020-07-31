@@ -41,4 +41,17 @@ $(document).ready(function(){
      
       });
     
+
+      $('.btn_consalt').on('click', function(e){
+          e.preventDefault();
+          $('.modal').fadeIn('show');
+      });
+
+      $('.modal_request_back').click(function () { 
+        $('.modal').fadeOut();
+      });
+
+      $('input[name=phone]').mask("+7(999) 999-9999");
+      
+               
   });

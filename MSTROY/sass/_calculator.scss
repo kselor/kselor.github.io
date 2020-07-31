@@ -27,7 +27,8 @@
     }
 
     &_device {
-        max-width: 400px;
+        width: 33.333%;
+        margin: 5px;
         padding: 30px;
         border: 2px solid rgba(255, 255, 255, 0.3);
         border-radius: 10px;
@@ -97,6 +98,7 @@
         &_item {
             width: 50%;
             padding: 30px;
+            
 
             &_title {
                 font-weight: normal;
@@ -105,6 +107,32 @@
                 color: #FFFFFF;
                 margin-bottom: 15px;
             }
+            .input_container{
+                position: relative;
+                &.space{
+                    &:before{
+                        content:url('../img/space.svg');
+                        position: absolute;
+                        right: 20px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        z-index: 1;
+                    }
+                }
+
+                &.person{
+                    &:before{
+                        content:url('../img/name.svg');
+                        position: absolute;
+                        right: 20px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        z-index: 1;
+                    }
+                }
+            }
+
+            
 
         }
     }
@@ -151,8 +179,19 @@
             flex-wrap: wrap;
             margin-top: 100px;
 
-            input {
+            .input_container {
                 width: 45%;
+                position: relative;
+                &.email{
+                    &:before{
+                        content:url('../img/mail.svg');
+                        position: absolute;
+                        right: 20px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        z-index: 1;
+                    }
+                }
             }
 
             .btn {
