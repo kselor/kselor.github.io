@@ -1,10 +1,10 @@
 .intro {
     background: linear-gradient(89.83deg, #0AAEE3 0.06%, #2B3180 99.94%);
     box-shadow: 0px 2px 6px rgba(19, 43, 77, 0.5);
-    padding-bottom: 30px;
+    position: relative;
 
     &_inner {
-        height: 820px;
+        height: 100vh;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -18,6 +18,11 @@
         margin-bottom: 30px;
     }
 
+    .btn {
+        height: 65px;
+        font-size: 24px;
+    }
+
     &_img {
         width: 50%;
 
@@ -29,7 +34,6 @@
     &_title {
         font-weight: bold;
         font-size: 36px;
-        line-height: 44px;
         color: #FFFFFF;
         margin-bottom: 30px;
     }
@@ -37,37 +41,54 @@
     &_subtitle {
         font-weight: bold;
         font-size: 20px;
-        line-height: 24px;
         color: #F1ECEC;
         margin-bottom: 60px;
     }
 
     &_scroll {
-        width: 40px;
-        height: 22px;
-        position: relative;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        bottom: 30px;
+        z-index: 1;
+        left: 50%;
+        transform: translateX(-50%);
         cursor: pointer;
-        margin: 0 auto;
+        animation: animation 2s infinite;
 
-        &:before {
-            content: '';
-            width: 3px;
-            height: 25px;
-            background: #ffff;
-            position: absolute;
-            left: 10px;
-            transform: rotate(-50deg);
+        span {
+            width: 35px;
+            height: 35px;
+            display: block;
+            position: relative;
+            margin: 0 auto;
+            top: 50%;
+            transform: translateY(-50%);
+
+
+           
+
+            &:before {
+                content: '';
+                width: 100%;
+                height: 100%;
+                border-bottom: 4px solid #ffff;
+                border-left: 4px solid #ffff;
+                position: absolute;
+                transform: rotate(-45deg);
+                
+            }
         }
-
-        &:after {
-            content: '';
-            width: 3px;
-            height: 25px;
-            background: #ffff;
-            position: absolute;
-            right: 10px;
-            transform: rotate(50deg);
-
+        @keyframes animation {
+            0%{
+                bottom: 30px; 
+            }
+            50%{
+                bottom: 15px; 
+            }
+            100%{
+                bottom: 30px;     
+            }
         }
     }
 
@@ -140,7 +161,6 @@
     &_politics {
         font-weight: 500;
         font-size: 14px;
-        line-height: 17px;
         color: #9DBBE2;
         margin-top: 50px;
 
@@ -183,7 +203,7 @@
     &_item {
         display: flex;
         align-items: center;
-        padding: 0 20px;
+        padding: 0 10px;
         width: 33.333%;
 
         &_icon {
@@ -193,7 +213,6 @@
         &_title {
             font-weight: bold;
             font-size: 16px;
-            line-height: 20px;
             color: #000000;
             margin-bottom: 10px;
         }
@@ -201,7 +220,6 @@
         &_text {
             font-weight: 500;
             font-size: 14px;
-            line-height: 17px;
             color: #000000;
         }
     }
@@ -267,14 +285,12 @@
         &_title {
             font-weight: bold;
             font-size: 20px;
-            line-height: 24px;
             color: #132B4D;
         }
 
         &_subtitle {
             font-weight: 600;
             font-size: 14px;
-            line-height: 17px;
             color: #6C83A1;
             margin-bottom: 25px;
         }
@@ -282,7 +298,6 @@
         &_text {
             font-weight: 500;
             font-size: 14px;
-            line-height: 17px;
             text-align: center;
             color: #423B57;
         }

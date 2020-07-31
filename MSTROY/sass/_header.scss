@@ -1,11 +1,18 @@
 .header {
-    position: relative;
+    display: block;
+    background: #ffffff;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
     &_inner {
         display: flex;
         justify-content: space-between;
         align-items: center;
         height: 100px;
-        background: #ffffff;
+        position: relative;
     }
     
     &_request{
@@ -26,7 +33,7 @@
     }
 
     &_logo {
-        max-width: 190px;
+        width: 190px;
     }
 
     &_nav {
@@ -38,7 +45,6 @@
             text-decoration: none;
             font-weight: bold;
             font-size: 18px;
-            line-height: 22px;
             text-align: center;
             color: #132B4D;
             padding: 0 20px;
@@ -59,7 +65,6 @@
             text-decoration: none;
             font-weight: bold;
             font-size: 18px;
-            line-height: 22px;
             text-align: center;
             color: #132B4D;
             margin-bottom: 10px;

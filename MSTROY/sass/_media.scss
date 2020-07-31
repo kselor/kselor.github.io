@@ -167,8 +167,9 @@
 @media (max-width: 767px) {
 
     .intro {
-        &_inner {
-            height: 500px;
+       
+        .btn{
+            font-size: 18px;
         }
 
         &_inner {
@@ -227,7 +228,9 @@
             flex-wrap: wrap;
         }
 
+
         &_device {
+            margin-top: 5px;
             width: 100%;
 
             &_title {

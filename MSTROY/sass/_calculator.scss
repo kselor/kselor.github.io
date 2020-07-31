@@ -6,18 +6,17 @@
 
     .title {
         color: #ffff;
-        margin: 0;
+        margin-bottom: 25px;
+        margin-top: 0;
     }
 
     &_section {
-        margin-top: 30px;
 
         &_title {
             font-weight: normal;
-            font-size: 24px;
-            line-height: 29px;
+            font-size: 20px;
             color: #FFFFFF;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
     }
 
@@ -28,10 +27,14 @@
 
     &_device {
         width: 33.333%;
-        margin: 5px;
-        padding: 30px;
+        margin-right: 5px;
+        padding: 15px 20px;
         border: 2px solid rgba(255, 255, 255, 0.3);
         border-radius: 10px;
+
+        &:last-child{
+            margin-right: 0;
+        }
 
         &.active {
             background: rgba(255, 255, 255, 0.5);
@@ -52,7 +55,7 @@
             line-height: 29px;
             color: #FFFFFF;
             text-align: center;
-            margin-bottom: 28px;
+            margin-bottom: 15px;
         }
 
         &_descr {
@@ -94,18 +97,18 @@
     &-form {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 25px;
 
         &_item {
-            width: 50%;
-            padding: 30px;
-            
+            width: 49%;
+            margin-top: 25px;
 
             &_title {
                 font-weight: normal;
-                font-size: 24px;
-                line-height: 29px;
+                font-size: 20px;
                 color: #FFFFFF;
-                margin-bottom: 15px;
+                margin-bottom: 5px;
             }
             .input_container{
                 position: relative;
@@ -140,7 +143,7 @@
     &-order {
         display: flex;
         justify-content: space-between;
-        margin-top: 35px;
+        margin-top: 15px;
 
         &_items {
             width: 50%;
@@ -149,8 +152,7 @@
         &_item {
             display: flex;
             justify-content: space-between;
-            font-size: 24px;
-            line-height: 35px;
+            font-size: 20px;
             color: #FFFFFF;
             padding: 5px 0;
         }
@@ -160,15 +162,13 @@
             flex-direction: column;
             justify-content: center;
             font-weight: normal;
-            font-size: 64px;
-            line-height: 78px;
+            font-size: 55px;
             text-align: right;
             color: #FFFFFF;
 
             span {
                 font-weight: normal;
                 font-size: 24px;
-                line-height: 29px;
                 text-align: right;
             }
         }
@@ -177,10 +177,10 @@
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
-            margin-top: 100px;
+            margin-top: 35px;
 
             .input_container {
-                width: 45%;
+                width: 49%;
                 position: relative;
                 &.email{
                     &:before{
@@ -195,7 +195,7 @@
             }
 
             .btn {
-                width: 620px;
+                width: 600px;
             }
         }
     }
@@ -217,7 +217,7 @@
         border-radius: 1.5em;
         position: relative;
         margin: 0 auto;
-        margin-top: 50px;
+        margin-top: 30px;
         cursor: pointer;
 
         &:before {
@@ -237,11 +237,11 @@
             &:before {
                 content: 'Аренда';
                 font-weight: normal;
-                font-size: 24px;
+                font-size: 18px;
                 line-height: 29px;
                 color: #FFFFFF;
                 position: absolute;
-                left:-110px;
+                left:-90px;
                 top:50%;
                 transform: translateY(-50%);
             }
@@ -249,7 +249,7 @@
             &:after {
                 content: 'Покупка оборудования';
                 font-weight: normal;
-                font-size: 24px;
+                font-size: 18px;
                 line-height: 29px;
                 color: rgba(255, 255, 255, 0.5);
                 position: absolute;
