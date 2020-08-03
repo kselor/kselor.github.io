@@ -3,7 +3,6 @@ $(document).ready(function(){
         arrows: false  
     });
     
-    
     $('.system .slider_dot').each(function(i){
         $(this).on('click', function(){
         $(this).addClass('active').siblings().removeClass('active'),
@@ -44,14 +43,33 @@ $(document).ready(function(){
 
       $('.btn_consalt').on('click', function(e){
           e.preventDefault();
-          $('.modal').fadeIn('show');
+          $('.modal, .modal_request').fadeIn('show');
       });
 
       $('.modal_request_back').click(function () { 
-        $('.modal').fadeOut();
+        $('.modal, .modal_request, .modal_thanks').fadeOut();
       });
 
       $('input[name=phone]').mask("+7(999) 999-9999");
-      
+      $('.calculator-order_price span').text((i, text) => {
+        const [ price, currency ] = text.split(' ');
+        return `${(+price).toLocaleString()} ${currency}`;
+      });
+
+      $('form').submit(function (e) {
+        e.preventDefault();
+        $.ajax({
+            type: "POST",
+            url: "mailer/smart.php",
+            data: $(this).serialize()
+        }).done(function () {
+            $(this).find("input").val("");
+            $('.modal_request').fadeOut();
+            $('.modal, .modal_thanks').fadeIn('slow');
+
+            $('form').trigger('reset');
+        });
+        return false;
+    });
 
   });

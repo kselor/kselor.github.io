@@ -31,6 +31,7 @@
         padding: 15px 20px;
         border: 2px solid rgba(255, 255, 255, 0.3);
         border-radius: 10px;
+        cursor: pointer;
 
         &:last-child{
             margin-right: 0;
@@ -101,7 +102,7 @@
         margin-bottom: 25px;
 
         &_item {
-            width: 49%;
+            width: 48%;
             margin-top: 25px;
 
             &_title {
@@ -110,33 +111,7 @@
                 color: #FFFFFF;
                 margin-bottom: 5px;
             }
-            .input_container{
-                position: relative;
-                &.space{
-                    &:before{
-                        content:url('../img/space.svg');
-                        position: absolute;
-                        right: 20px;
-                        top: 50%;
-                        transform: translateY(-50%);
-                        z-index: 1;
-                    }
-                }
-
-                &.person{
-                    &:before{
-                        content:url('../img/name.svg');
-                        position: absolute;
-                        right: 20px;
-                        top: 50%;
-                        transform: translateY(-50%);
-                        z-index: 1;
-                    }
-                }
-            }
-
             
-
         }
     }
 
@@ -162,13 +137,13 @@
             flex-direction: column;
             justify-content: center;
             font-weight: normal;
-            font-size: 55px;
+            font-size: 24px;
             text-align: right;
             color: #FFFFFF;
 
             span {
                 font-weight: normal;
-                font-size: 24px;
+                font-size: 55px;
                 text-align: right;
             }
         }
@@ -177,21 +152,10 @@
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
-            margin-top: 35px;
+            margin-top: 40px;
 
             .input_container {
-                width: 49%;
-                position: relative;
-                &.email{
-                    &:before{
-                        content:url('../img/mail.svg');
-                        position: absolute;
-                        right: 20px;
-                        top: 50%;
-                        transform: translateY(-50%);
-                        z-index: 1;
-                    }
-                }
+                width: 48%;
             }
 
             .btn {

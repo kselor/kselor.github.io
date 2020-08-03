@@ -32,9 +32,9 @@
                 <nav>
                     <ul class="header_nav">
                         <li><a href="#system" class="header_nav_link">Описание</a></li>
-                        <li><a href="" class="header_nav_link">Стоимость</a></li>
-                        <li><a href="" class="header_nav_link">Отзывы</a></li>
-                        <li><a href="" class="header_nav_link">Контакты</a></li>
+                        <li><a href="#calculator" class="header_nav_link">Калькулятор</a></li>
+                        <li><a href="#reviews" class="header_nav_link">Отзывы</a></li>
+                        <li><a href="#footer" class="header_nav_link">Контакты</a></li>
                     </ul>
                 </nav>
                 <div class="header_call">
@@ -56,8 +56,8 @@
                         Узнай сколько реально работают сотрудники
                         <br> на стройплощадке
                     </div>
-                    <button class="btn_count btn">Рассчитать стоимость</button>
-                    <button class="btn_consalt btn">Получить консультацию</button>
+                   <a href="#calculator"><button class="btn btn_count">Рассчитать стоимость</button></a>
+                    <button class="btn btn_consalt">Получить консультацию</button>
                 </div>
                 <div class="intro_img"><img src="img/intro_img.png" alt=""></div>
             </div>
@@ -119,13 +119,30 @@
             <div class="consalt_inner">
                 <h2 class="title">Оставте заявку на консультацию</h2>
                 <form class="consalt_form" action="#">
-                    <div class="input-section name">
-                        <input placeholder="Ваше имя" type="text">
+                    <div class="input_container">
+                        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                            <path class="cls-1"
+                                d="M16,17a8,8,0,1,1,8-8A8,8,0,0,1,16,17ZM16,3a6,6,0,1,0,6,6A6,6,0,0,0,16,3Z" />
+                            <path class="cls-1"
+                                d="M23,31H9a5,5,0,0,1-5-5V22a1,1,0,0,1,.49-.86l5-3a1,1,0,0,1,1,1.72L6,22.57V26a3,3,0,0,0,3,3H23a3,3,0,0,0,3-3V22.57l-4.51-2.71a1,1,0,1,1,1-1.72l5,3A1,1,0,0,1,28,22v4A5,5,0,0,1,23,31Z" />
+                        </svg>
+                        <input required placeholder="Ваше имя" type="text" name="name">
                     </div>
-                    <div class="input-section phone">
-                        <input placeholder="Номер телефона" type="text" name="phone">
+                    <div class="input_container">
+                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+                            style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                            <path d="M256,32c123.5,0,224,100.5,224,224S379.5,480,256,480S32,379.5,32,256S132.5,32,256,32 M256,0C114.625,0,0,114.625,0,256
+		s114.625,256,256,256s256-114.625,256-256S397.375,0,256,0L256,0z M398.719,341.594l-1.438-4.375
+		c-3.375-10.062-14.5-20.562-24.75-23.375L334.688,303.5c-10.25-2.781-24.875,0.969-32.405,8.5l-13.688,13.688
+		c-49.75-13.469-88.781-52.5-102.219-102.25l13.688-13.688c7.5-7.5,11.25-22.125,8.469-32.406L198.219,139.5
+		c-2.781-10.25-13.344-21.375-23.406-24.75l-4.313-1.438c-10.094-3.375-24.5,0.031-32,7.563l-20.5,20.5
+		c-3.656,3.625-6,14.031-6,14.063c-0.688,65.063,24.813,127.719,70.813,173.75c45.875,45.875,108.313,71.345,173.156,70.781
+		c0.344,0,11.063-2.281,14.719-5.938l20.5-20.5C398.688,366.062,402.062,351.656,398.719,341.594z" />
+                        </svg>
+                        <input required placeholder="Номер телефона" type="text" name="phone">
                     </div>
-                    <button class="btn">ОТПРАВИТЬ</button>
+                    <button class="btn" type="submit">ОТПРАВИТЬ</button>
                 </form>
                 <div class="consalt_politics">Отправляя данную форму, Вы принимаете условия
                     <a href="">Пользовательского соглашения</a>
@@ -260,7 +277,7 @@
         </div>
     </section>
 
-    <section class="calculator">
+    <section class="calculator" id="calculator">
         <div class="container">
             <h2 class="title">Калькулятор стоимости</h2>
             <div class="calculator_inner">
@@ -307,12 +324,26 @@
                             <div class="calculator-form_item">
                                 <div class="calculator-form_item_title">Площадь строительных площадок</div>
                                 <div class="input_container space">
+                                    <svg width="33" height="26" viewBox="0 0 33 26" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M18.018 7.28C18.21 7.28 18.378 7.352 18.522 7.496C18.666 7.64 18.738 7.796 18.738 7.964V25.208C18.738 25.448 18.666 25.64 18.522 25.784C18.378 25.928 18.186 26 17.946 26H17.334C17.094 26 16.902 25.928 16.758 25.784C16.614 25.64 16.542 25.448 16.542 25.208V11.744L11.286 21.932C11.094 22.268 10.914 22.52 10.746 22.688C10.602 22.856 10.374 22.94 10.062 22.94H9.342C9.03 22.94 8.79 22.856 8.622 22.688C8.478 22.52 8.31 22.268 8.118 21.932L2.862 12.032V25.208C2.862 25.448 2.79 25.64 2.646 25.784C2.502 25.928 2.31 26 2.07 26H1.458C1.218 26 1.026 25.928 0.882 25.784C0.738 25.64 0.666 25.448 0.666 25.208V7.964C0.666 7.796 0.738 7.64 0.882 7.496C1.026 7.352 1.194 7.28 1.386 7.28H2.214C2.574 7.28 2.85 7.46 3.042 7.82L9.702 20.42L16.362 7.82C16.554 7.46 16.83 7.28 17.19 7.28H18.018ZM23.5643 13.4C23.3243 13.4 23.1323 13.328 22.9883 13.184C22.8443 13.04 22.7723 12.848 22.7723 12.608V11.996C22.7723 11.804 22.8323 11.624 22.9523 11.456C23.0723 11.264 23.3003 11.048 23.6363 10.808L25.4003 9.548C26.7203 8.588 27.6563 7.892 28.2083 7.46C28.7843 7.004 29.2163 6.56 29.5043 6.128C29.8163 5.672 29.9723 5.168 29.9723 4.616C29.9723 4.016 29.7443 3.536 29.2883 3.176C28.8323 2.792 28.2803 2.6 27.6323 2.6C26.8883 2.6 26.3483 2.732 26.0123 2.996C25.7003 3.26 25.4963 3.5 25.4003 3.716C25.2803 3.956 25.2083 4.1 25.1843 4.148C25.0403 4.412 24.9083 4.592 24.7883 4.688C24.6683 4.76 24.5123 4.796 24.3203 4.796H23.7803C23.3483 4.796 23.1323 4.592 23.1323 4.184C23.1323 3.632 23.3363 3.08 23.7443 2.528C24.1523 1.952 24.7043 1.496 25.4003 1.16C26.0963 0.799998 26.8403 0.619998 27.6323 0.619998C28.9523 0.619998 30.0203 1.016 30.8363 1.808C31.6523 2.6 32.0603 3.536 32.0603 4.616C32.0603 5.48 31.8683 6.248 31.4843 6.92C31.1243 7.568 30.5603 8.204 29.7923 8.828C29.0483 9.452 27.8963 10.304 26.3363 11.384H31.8083C32.0483 11.384 32.2403 11.456 32.3843 11.6C32.5283 11.744 32.6003 11.936 32.6003 12.176V12.608C32.6003 12.848 32.5283 13.04 32.3843 13.184C32.2403 13.328 32.0483 13.4 31.8083 13.4H23.5643Z"
+                                            fill="#2B3180" />
+                                    </svg>
                                     <input placeholder="Введите площадь" type="text">
                                 </div>
                             </div>
                             <div class="calculator-form_item">
                                 <div class="calculator-form_item_title">Количество работников</div>
                                 <div class="input_container person">
+                                    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                                        <path class="cls-1"
+                                            d="M16,17a8,8,0,1,1,8-8A8,8,0,0,1,16,17ZM16,3a6,6,0,1,0,6,6A6,6,0,0,0,16,3Z">
+                                        </path>
+                                        <path class="cls-1"
+                                            d="M23,31H9a5,5,0,0,1-5-5V22a1,1,0,0,1,.49-.86l5-3a1,1,0,0,1,1,1.72L6,22.57V26a3,3,0,0,0,3,3H23a3,3,0,0,0,3-3V22.57l-4.51-2.71a1,1,0,1,1,1-1.72l5,3A1,1,0,0,1,28,22v4A5,5,0,0,1,23,31Z">
+                                        </path>
+                                    </svg>
                                     <input placeholder="Введите количество" type="text">
                                 </div>
                             </div>
@@ -347,12 +378,19 @@
                                 </div>
                             </div>
 
-                            <div class="calculator-order_price">84 600 ₽
-                                <span>в месяц с НДС</span>
+                            <div class="calculator-order_price"> 
+                            <span>84 600 ₽</span> 
+                                в месяц с НДС
                             </div>
                         </div>
                         <div class="calculator-order_request">
                             <div class="input_container email">
+                                <svg width="40" height="27" viewBox="0 0 40 27" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M19.0292 13.6992L4.42817 2.71569H35.5717L20.9707 13.6992L20.9693 13.7002C20.7477 13.8694 20.3848 13.9878 20.001 13.9861L19.9988 13.9861C19.6151 13.9878 19.2523 13.8694 19.0305 13.7002L19.0292 13.6992ZM28.0066 14.8103L28.0066 14.8104L35.9822 24.6913H4.01772L11.9933 14.8104L11.9934 14.8103C12.3335 14.3886 12.2692 13.7703 11.8477 13.4282L11.8476 13.4282C11.4266 13.0867 10.8089 13.1513 10.4681 13.5738C10.4681 13.5738 10.4681 13.5738 10.4681 13.5739L2.71151 23.1834V3.8827L17.8522 15.2712L17.8528 15.2717C18.4874 15.7457 19.2529 15.9497 19.9991 15.9518L20.0003 15.9518C20.7457 15.9502 21.5119 15.7461 22.1468 15.2717L22.1475 15.2712L37.2881 3.8827V23.1833L29.5318 13.5738C29.5317 13.5738 29.5317 13.5738 29.5317 13.5738C29.1911 13.1517 28.5731 13.0865 28.1524 13.4281C27.7306 13.7696 27.6663 14.3887 28.0066 14.8103ZM37.0512 0.75H2.94876C1.73814 0.75 0.75 1.74205 0.75 2.95435V24.4526C0.75 25.6648 1.73813 26.657 2.94876 26.657H37.0512C38.2617 26.657 39.25 25.6649 39.25 24.4526V2.95435C39.2499 1.74205 38.2618 0.75 37.0512 0.75Z"
+                                        fill="#2B3180" stroke="#2B3180" stroke-width="0.5" />
+                                </svg>
                                 <input placeholder="введите email" type="text">
                             </div>
                             <button class="btn">Получить коммерческое предложение</button>
@@ -372,7 +410,7 @@
                     <div class="advantages_item_icon"><img src="img/advantage_1.png" alt=""></div>
                     <div class="advantages_item_dscr">
                         <div class="advantages_item_title">Решение реальных проблем</div>
-                        <div class="advantage_item_text">Наши устройства созданы на
+                        <div class="advantages_item_text">Наши устройства созданы на
                             основе реальных потребностей </div>
                     </div>
                 </div>
@@ -380,7 +418,7 @@
                     <div class="advantages_item_icon"><img src="img/advantage_2.png" alt=""></div>
                     <div class="advantages_item_dscr">
                         <div class="advantages_item_title">Простота внедрения системы</div>
-                        <div class="advantage_item_text">Система легко внедряется в любые бизнес-процессы заказчика
+                        <div class="advantages_item_text">Система легко внедряется в любые бизнес-процессы заказчика
                         </div>
                     </div>
                 </div>
@@ -388,7 +426,8 @@
                     <div class="advantages_item_icon"><img src="img/advantage_3.png" alt=""></div>
                     <div class="advantages_item_dscr">
                         <div class="advantages_item_title">Экономическая эффективность</div>
-                        <div class="advantage_item_text">Быстрая окупаемость за счет низкой цены и достигаемого эффекта.
+                        <div class="advantages_item_text">Быстрая окупаемость за счет низкой цены и достигаемого
+                            эффекта.
                         </div>
                     </div>
                 </div>
@@ -408,7 +447,7 @@
         </div>
     </section>
 
-    <section class="reviews">
+    <section class="reviews" id="reviews">
         <div class="container">
             <h2 class="title">Отзывы наших клиентов</h2>
             <div class="reviews_inner">
@@ -443,7 +482,7 @@
         </div>
     </section>
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="container">
             <div class="footer_inner">
 
@@ -531,13 +570,30 @@
                     <div class="footer_item_consalt">
                         <h2 class="footer_item_title">Консультация</h2>
                         <form class="consalt_form" action="#">
-                            <div class="input-section name">
-                                <input placeholder="Ваше имя" type="text">
+                            <div class="input_container">
+                                <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                                    <path class="cls-1"
+                                        d="M16,17a8,8,0,1,1,8-8A8,8,0,0,1,16,17ZM16,3a6,6,0,1,0,6,6A6,6,0,0,0,16,3Z" />
+                                    <path class="cls-1"
+                                        d="M23,31H9a5,5,0,0,1-5-5V22a1,1,0,0,1,.49-.86l5-3a1,1,0,0,1,1,1.72L6,22.57V26a3,3,0,0,0,3,3H23a3,3,0,0,0,3-3V22.57l-4.51-2.71a1,1,0,1,1,1-1.72l5,3A1,1,0,0,1,28,22v4A5,5,0,0,1,23,31Z" />
+                                </svg>
+                                <input required placeholder="Ваше имя" type="text" name="name">
                             </div>
-                            <div class="input-section phone">
-                                <input placeholder="Номер телефона" type="text" name="phone">
+                            <div class="input_container">
+                                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+                                    style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                    <path d="M256,32c123.5,0,224,100.5,224,224S379.5,480,256,480S32,379.5,32,256S132.5,32,256,32 M256,0C114.625,0,0,114.625,0,256
+                s114.625,256,256,256s256-114.625,256-256S397.375,0,256,0L256,0z M398.719,341.594l-1.438-4.375
+                c-3.375-10.062-14.5-20.562-24.75-23.375L334.688,303.5c-10.25-2.781-24.875,0.969-32.405,8.5l-13.688,13.688
+                c-49.75-13.469-88.781-52.5-102.219-102.25l13.688-13.688c7.5-7.5,11.25-22.125,8.469-32.406L198.219,139.5
+                c-2.781-10.25-13.344-21.375-23.406-24.75l-4.313-1.438c-10.094-3.375-24.5,0.031-32,7.563l-20.5,20.5
+                c-3.656,3.625-6,14.031-6,14.063c-0.688,65.063,24.813,127.719,70.813,173.75c45.875,45.875,108.313,71.345,173.156,70.781
+                c0.344,0,11.063-2.281,14.719-5.938l20.5-20.5C398.688,366.062,402.062,351.656,398.719,341.594z" />
+                                </svg>
+                                <input required placeholder="Номер телефона" type="text" name="phone">
                             </div>
-                            <button class="btn">ОТПРАВИТЬ</button>
+                            <button class="btn" type="submit">ОТПРАВИТЬ</button>
                         </form>
                     </div>
                 </div>
@@ -553,15 +609,48 @@
                 Заказать звонок
                 <div class="modal_request_back"></div>
             </div>
-            <form class="consalt_form" action="#">
-                <div class="input-section name">
-                    <input placeholder="Ваше имя" type="text">
-                </div>
-                <div class="input-section phone">
-                    <input placeholder="Номер телефона" type="text" name="phone">
-                </div>
-                <button class="btn">ОТПРАВИТЬ</button>
-            </form>
+            <div class="modal_request_inner">
+                <div class="modal_request_subtile">Представьтесь, мы вам перезвоним.</div>
+                <form class="consalt_form" action="#">
+                    <div class="input_container">
+                        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                            <path class="cls-1"
+                                d="M16,17a8,8,0,1,1,8-8A8,8,0,0,1,16,17ZM16,3a6,6,0,1,0,6,6A6,6,0,0,0,16,3Z" />
+                            <path class="cls-1"
+                                d="M23,31H9a5,5,0,0,1-5-5V22a1,1,0,0,1,.49-.86l5-3a1,1,0,0,1,1,1.72L6,22.57V26a3,3,0,0,0,3,3H23a3,3,0,0,0,3-3V22.57l-4.51-2.71a1,1,0,1,1,1-1.72l5,3A1,1,0,0,1,28,22v4A5,5,0,0,1,23,31Z" />
+                        </svg>
+                        <input required placeholder="Ваше имя" type="text" name="name">
+                    </div>
+                    <div class="input_container">
+                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+                            style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                            <path d="M256,32c123.5,0,224,100.5,224,224S379.5,480,256,480S32,379.5,32,256S132.5,32,256,32 M256,0C114.625,0,0,114.625,0,256
+    s114.625,256,256,256s256-114.625,256-256S397.375,0,256,0L256,0z M398.719,341.594l-1.438-4.375
+    c-3.375-10.062-14.5-20.562-24.75-23.375L334.688,303.5c-10.25-2.781-24.875,0.969-32.405,8.5l-13.688,13.688
+    c-49.75-13.469-88.781-52.5-102.219-102.25l13.688-13.688c7.5-7.5,11.25-22.125,8.469-32.406L198.219,139.5
+    c-2.781-10.25-13.344-21.375-23.406-24.75l-4.313-1.438c-10.094-3.375-24.5,0.031-32,7.563l-20.5,20.5
+    c-3.656,3.625-6,14.031-6,14.063c-0.688,65.063,24.813,127.719,70.813,173.75c45.875,45.875,108.313,71.345,173.156,70.781
+    c0.344,0,11.063-2.281,14.719-5.938l20.5-20.5C398.688,366.062,402.062,351.656,398.719,341.594z" />
+                        </svg>
+                        <input required placeholder="Номер телефона" type="text" name="phone">
+                    </div>
+
+                    <div class="modal_request_politics">Отправляя информацию, вы соглашаетесь на обработку
+                        <a href="">персональных данных</a></div>
+                    <button class="btn" type="submit">ОТПРАВИТЬ</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="modal_thanks">
+            <div class="modal_request_header">
+                <div class="modal_request_back"></div>
+            </div>
+            <div class="modal_thanks_wrap">
+            <div class="modal_thanks_title">Спасибо</div>
+            <div class="modal_thanks_subtitle">В ближайшее время мы свяжемся с вами</div>
+            </div>
         </div>
 
     </div>
@@ -572,6 +661,7 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/calc.js"></script>
     <script src="js/script.js"></script>
 </body>
 

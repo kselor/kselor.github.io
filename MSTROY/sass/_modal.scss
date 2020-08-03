@@ -15,6 +15,7 @@
         left: 50%;
         transform: translate(-50%, -50%);
         background: #ffff;
+        display: none;
 
         &_header {
             display: flex;
@@ -60,25 +61,76 @@
                 transform: rotate(45deg);
             }
         }
+
+        &_inner{
+            padding: 0 30px 50px;
+        }
+
+        &_subtile{
+            text-align: center;
+            margin: 30px 0 15px;
+            color: rgb(83, 79, 79);
+        }
+
+        &_politics{
+            text-align: center;
+            font-size: 13px;
+            margin: 10px 0;
+            color: rgb(83, 79, 79);
+
+            a{
+                text-decoration: none;
+                color: #2B3180;
+            }
+        }
     }
 
     .consalt_form {
-        padding: 60px;
-        .input-section{
+        
+        .input_container{
             width: 100%;
-            margin-bottom: 30px;
+            margin: 15px 0;
             border: 1px solid rgb(90, 87, 87);
             border-radius: 10px;
             input{
-                font-size: 18px;
+                font-size: 16px;
             }
 
         }
 
         .btn{
+            margin-top: 15px;
             width: 250px;
-            margin-top: 30px;
         }
 
+    }
+
+    &_thanks{
+        max-width: 450px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: linear-gradient(89.83deg, #0AAEE3 0.06%, #2B3180 99.94%);
+        display: none;
+
+        .modal_request_header{
+            height: 60px;
+        }
+
+        &_wrap{
+            padding: 0 40px 60px;
+        }
+
+        &_title{
+            font-size: 30px;
+            font-weight: 600;
+            color: #ffff;
+            margin-bottom: 30px;
+        }
+
+        &_subtitle{
+            color: #ffff;
+        }
     }
 }

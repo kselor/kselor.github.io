@@ -86,6 +86,12 @@
             border: 1px solid #0A5DB9;
             border-radius: 4px;
             padding: 7px 25px;
+
+            &:hover{
+                background: #0A5DB9;
+                color: #fff;
+                transition: 0.2s;
+            }
         }
     }
 

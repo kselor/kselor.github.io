@@ -23,6 +23,19 @@
     margin: 100px 0 50px;
 }
 
+.input_container {
+    position: relative;
+    svg{
+        width: 32px;
+        position: absolute;
+        fill: #2B3180;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+    }
+}
+
 input {
     width: 100%;
     height: 55px;
