@@ -24,7 +24,7 @@
 .btn_no-bg { color: #FFFFFF; background: none; border: 2px solid #FFFFFF; }
 .btn_no-bg:hover { background: #FFFFFF; color: #2B3180; transition: 0.2s; }
 
-.intro { background: url("/img/img/intro_bg.svg") no-repeat center/cover; }
+.intro { background: url("../img/img/intro_bg.svg") no-repeat center/cover; }
 .intro_inner { height: 800px; display: flex; justify-content: space-between; align-items: center; }
 .intro_title { font-family: 'Bebas Neue'; font-weight: bold; font-size: 96px; text-transform: uppercase; color: #FFFFFF; }
 
