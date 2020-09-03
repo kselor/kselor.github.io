@@ -1,0 +1,214 @@
+.calculator {
+    background: linear-gradient(89.95deg, #0D97D5 0.06%, #003F78 99.96%);
+    padding: 60px 0;
+
+    &_section_free {
+
+        .calculator_items {
+            background: #fff;
+            border-radius: 5px;
+            margin-top: 60px;
+        }
+
+        .calculator_item {
+            display: flex;
+            padding: 20px 0;
+            border-bottom: 1px solid #C4C4C4;
+
+            &:last-child {
+                border-bottom: none;
+            }
+
+            &_icon {
+                display: flex;
+                justify-content: center;
+                width: 200px;
+            }
+
+            &_descr {
+                max-width: 950px;
+            }
+
+            &_title {
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 20px;
+                color: #000000;
+
+                span {
+                    color: #2B3180;
+                }
+            }
+        }
+    }
+
+    &_section_paid {
+        margin-top: 60px;
+
+        .title {
+            margin-bottom: 60px;
+        }
+
+        .calculator_items {
+            display: flex;
+
+        }
+
+        .calculator_item {
+            width: 22%;
+            border-right: 1px solid #FFFFFF;
+
+            &:first-child {
+                width: 33.333%;
+
+                .calculator_item_title {
+                    border-top-left-radius: 5px;
+                    border-bottom-left-radius: 5px;
+                }
+
+                .calculator_option {
+                    justify-content: flex-start;
+                }
+            }
+
+            &:last-child {
+                border-right: 0;
+
+                .calculator_item_title {
+                    border-top-right-radius: 5px;
+                    border-bottom-right-radius: 5px;
+                    border-right: 1px solid #D4E1EE;
+                }
+
+                .calculator_option {
+                    justify-content: flex-start;
+                    padding: 10px 0;
+                }
+            }
+
+            &_title {
+                font-weight: bold;
+                font-size: 18px;
+                color: #FFFFFF;
+                background: rgba(255, 255, 255, 0.15);
+                border: 1px solid #D4E1EE;
+                padding: 15px 0;
+                text-align: center;
+                margin-bottom: 10px;
+                border-right: 0;
+            }
+
+            ul {
+                padding: 0;
+            }
+        }
+
+        .calculator_option {
+            list-style: none;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            border-radius: 5px;
+            margin: 5px;
+            font-weight: bold;
+            font-size: 18px;
+            color: rgba(255, 255, 255, 0.7);
+            cursor: pointer;
+
+            &_icon {
+                min-width: 122px;
+                display: flex;
+                justify-content: center;
+                margin-right: 10px;
+            }
+
+
+            &.active {
+                background: rgba(255, 255, 255, 0.33);
+                justify-content: space-between;
+                color: #fff;
+                cursor: default;
+            }
+
+            &_count{
+                display: flex;
+                align-items: center;
+                &:before{
+                    content:'-';
+                    font-size: 24px;
+                    margin-right: 10px;
+                    cursor: pointer;
+                }
+
+                &:after{
+                    content:'+';
+                    font-size: 24px;
+                    margin-left: 10px;
+                    cursor: pointer;
+                }
+            }
+        }
+
+    }
+
+    &_order {
+        padding: 0 10px;
+        margin-top: 20px;
+
+        &_descr {
+            font-weight: 500;
+            font-size: 15px;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .calculator_option {
+
+            &_title {
+                font-weight: 500;
+                font-size: 15px;
+                color: #fff;
+                
+
+                span {
+                    font-weight: 700;
+                }
+            }
+
+            &_icon {
+                min-width: 50px;
+                max-width: 50px;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            &_value {
+                font-weight: 500;
+                font-size: 16px;
+                color: #C4C4C4;
+                width: 30%;   
+            }
+
+        }
+
+        &_price {
+            font-weight: bold;
+            font-size: 45px;
+            text-align: center;
+            color: #FFFFFF;
+            margin: 20px 0;
+        }
+
+        &_btn {
+            width: 100%;
+
+            .btn {
+                width: 100%;
+                font-size: 18px;
+            }
+        }
+    }
+
+
+}

@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'Bebas Neue';
+    src: local('Bebas Neue Bold'), url('../fonts/bebasneuebold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+*,
+:before,
+:after {
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+
+}
+
+:focus {
+    outline: none;
+}
+
+.container {
+    max-width: 1260px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 36px;
+    color: #333333;
+    text-align: center;
+
+    &_white{
+        color:#fff;
+    }
+}
+
+@import '_header.scss';
+@import '_btn.scss';
+@import '_main.scss';
+@import '_calculator.scss';
+@import '_footer.scss'
