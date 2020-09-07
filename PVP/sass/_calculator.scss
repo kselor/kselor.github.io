@@ -3,7 +3,7 @@
     padding: 60px 0;
    
     .container{
-        max-width: 1355px;
+        max-width: 1385px;
     }
 
     &_section_free {
@@ -63,12 +63,12 @@
             display: flex;
             background: #fff;
             border-radius: 5px;
-            padding-bottom: 15px;
         }
 
         .calculator_item {
-            width: 250px;
+            width: 270px;
             border-left: 1px solid #C4C4C4;
+            padding-bottom: 10px;
             
 
             &:first-child {
@@ -82,7 +82,7 @@
             }
 
             &:last-child{
-               width: 365px;
+               width: 355px;
             }
 
             &_title {
@@ -91,7 +91,7 @@
                 justify-content: center;
                 font-weight: bold;
                 font-size: 18px;
-                color: #333;
+                color: #000;
                 border-bottom: 1px solid #C4C4C4;
                 height: 75px;
                 text-align: center;
@@ -105,16 +105,15 @@
 
         .calculator_option {
             list-style: none;
-            padding: 0 15px 0 40px;
-            height: 55px;
+            padding: 11px 15px 11px 40px;
             display: flex;
             align-items: center;
             justify-content: space-between;
             border-radius: 5px;
-            margin: 5px;
+            margin: 0 10px;
             font-weight: bold;
             font-size: 18px;
-            color: #333;
+            color: #000;
             cursor: pointer;
 
             &_icon {
@@ -128,8 +127,9 @@
 
             &.active {
                 background: rgba(13, 151, 213, 0.37);
+                height: 55px;
                 cursor: default;
-                pointer-events: none;               
+                pointer-events: none; 
             }
 
             &_count {
@@ -157,13 +157,13 @@
     }
 
     &_order {
-        padding: 0 30px;
+        padding: 0 40px 0 30px;
         margin-top: 40px;
 
         &_descr {
             font-weight: normal;
             font-size: 18px;
-            color: #333;
+            color: #000;
             margin-bottom: 20px;
         }
 
@@ -174,7 +174,7 @@
         &_weight {
             font-weight: normal;
             font-size: 18px;
-            color: #333;
+            color: #000;
             text-align: left;
             margin-bottom: 50px;
         }
@@ -190,28 +190,30 @@
             font-weight: bold;
             font-size: 45px;
             text-align: left;
-            color: #333;
-            margin: 20px 0;
+            color: #000;
+            margin: 40px 0;
         }
 
         &_btn {
             width: 100%;
-
-            
-
+            padding: 0 25px;
             .btn {
                 width: 100%;
                 font-size: 18px;
                 background: linear-gradient(90.03deg, #0AAEE3 0.05%, #2B3180 99.16%);
                 color: #fff;
+                filter: none;
+ 
                 &:hover{
                     color: #2B3180;
                     background: #fff;
+                    border: 2px solid #2B3180;
                 }
                 &_no-bg{
                     color: #2B3180;
                     border: 2px solid #2B3180;
                     background: none;
+                    filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.3));
                     &:hover{
                         border: none;
                         background: linear-gradient(90.03deg, #0AAEE3 0.05%, #2B3180 99.16%);

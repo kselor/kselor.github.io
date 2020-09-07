@@ -45,7 +45,7 @@ $(document).ready(function () {
 
             priceWeight = $(this).val();
             totalPrice = priceWeight + priceTrailer;
-            $('.calculator_order_price').html(totalPrice + ' ₽')
+            $('.calculator_order_price').html(totalPrice.toLocaleString() + ' ₽')
 
             
             if (i <= 1) {
@@ -86,7 +86,7 @@ $(document).ready(function () {
 
             priceTrailer = $(this).val();
             totalPrice = priceWeight + priceTrailer * totalCount;
-            $('.calculator_order_price').html(totalPrice + ' ₽');
+            $('.calculator_order_price').html(totalPrice.toLocaleString() + ' ₽');
 
 
             if (i == 0) {
