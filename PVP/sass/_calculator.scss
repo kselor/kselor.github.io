@@ -12,7 +12,8 @@
 
         .calculator_item {
             display: flex;
-            padding: 20px 0;
+            align-items: center;
+            padding: 20px 15px;
             border-bottom: 1px solid #C4C4C4;
 
             &:last-child {
@@ -20,26 +21,30 @@
             }
 
             &_icon {
-                img{
+                img {
                     width: 80px;
-                    margin: 0 70px;
+                    margin: 0 15px;
                 }
             }
 
             &_descr {
-                max-width: 950px;
-                margin-left: 5px;
-            }
-
-            &_title {
-                font-weight: bold;
-                font-size: 16px;
-                line-height: 20px;
-                color: #000000;
+                font-weight: 500;
 
                 span {
                     color: #2B3180;
                 }
+            }
+
+
+            &_title {
+                max-width: 250px;
+                min-width: 250px;
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 20px;
+                color: #000000;
+                margin: 0 30px;
+
             }
         }
     }
@@ -53,54 +58,33 @@
 
         .calculator_items {
             display: flex;
-
+            background: #fff;
+            border-radius: 5px;
+            padding-bottom: 15px;
         }
 
         .calculator_item {
-            width: 23%;
-            border-right: 1px solid #FFFFFF;
+            width: 25%;
+            border-left: 1px solid #C4C4C4;
+            
 
             &:first-child {
-                width: 29%;
-
-                .calculator_item_title {
-                    border-top-left-radius: 5px;
-                    border-bottom-left-radius: 5px;
-                }
-
+                border-left: 0;
                 .calculator_option {
-                    justify-content: flex-start;
                     padding: 15px 5px;
                     font-size: 16px;
-                }
-            }
-
-            &:last-child {
-        
-                border-right: 0;
-
-                .calculator_item_title {
-                    border-top-right-radius: 5px;
-                    border-bottom-right-radius: 5px;
-                    border-right: 1px solid #D4E1EE;
-                }
-
-                .calculator_option {
-                    justify-content: flex-start;
-                    padding: 10px 0;
+                    justify-content: start;
                 }
             }
 
             &_title {
                 font-weight: bold;
                 font-size: 18px;
-                color: #FFFFFF;
-                background: rgba(255, 255, 255, 0.15);
-                border: 1px solid #D4E1EE;
-                padding: 15px 0;
+                color: #333;
+                border-bottom: 1px solid #C4C4C4;
+                padding: 25px 0;
                 text-align: center;
                 margin-bottom: 10px;
-                border-right: 0;
             }
 
             ul {
@@ -110,50 +94,50 @@
 
         .calculator_option {
             list-style: none;
-            padding: 15px 20px;
+            padding: 0 15px;
+            height: 60px;
             display: flex;
             align-items: center;
+            justify-content: space-between;
             border-radius: 5px;
             margin: 5px;
             font-weight: bold;
             font-size: 18px;
-            color: rgba(255, 255, 255, 0.7);
+            color: #333;
             cursor: pointer;
 
             &_icon {
-                min-width: 120px;
-                display: flex;
-                justify-content: center;
-                margin-right: 10px;
-                img{
-                    width: 100px;
+
+                img {
+                    width: 80px;
+                    margin-right: 10px;
                 }
             }
 
 
             &.active {
-                background: rgba(255, 255, 255, 0.33);
-                justify-content: space-between;
-                color: #fff;
+                background: rgba(13, 151, 213, 0.37);
                 cursor: default;
+                pointer-events: none;               
             }
 
-            &_count{
+            &_count {
                 display: flex;
                 align-items: center;
-                &:before{
-                    content:'-';
+                pointer-events: painted; 
+                
+                .plus {
+                    font-size: 24px;
+                    margin-left: 10px;
+                    cursor: pointer;
+                }
+
+                .minus {
                     font-size: 24px;
                     margin-right: 10px;
                     cursor: pointer;
                 }
 
-                &:after{
-                    content:'+';
-                    font-size: 24px;
-                    margin-left: 10px;
-                    cursor: pointer;
-                }
             }
         }
 
@@ -166,53 +150,72 @@
         &_descr {
             font-weight: 500;
             font-size: 15px;
-            color: rgba(255, 255, 255, 0.9);
+            color: #333;
+            margin-bottom: 20px;
         }
 
-        .calculator_option {
-            &_title {
-                font-weight: 500;
-                font-size: 15px;
-                color: #fff;
-            
-                span {
-                    font-weight: 700;
-                }
+        &_item{
+            display: flex;
+            padding: 15px 0;
+        }
+
+        &_title {
+            font-weight: 500;
+            font-size: 15px;
+            color: #333;
+
+            span {
+                font-weight: 700;
             }
+        }
 
-            &_icon {
-                min-width: 50px;
-                max-width: 50px;
-
-                img {
-                    width: 100%;
-                }
+        &_icon {
+            margin-right: 10px;
+            img {
+                width: 50px;
             }
+        }
 
-            &_value {
-                font-weight: 500;
-                font-size: 16px;
-                color: #C4C4C4;
-                width: 30%;  
-                text-align: right;
-            }
-
+        &_value {
+            font-weight: 500;
+            font-size: 16px;
+            color: #C4C4C4;
+            width: 30%;
+            text-align: right;
         }
 
         &_price {
             font-weight: bold;
             font-size: 45px;
             text-align: center;
-            color: #FFFFFF;
+            color: #333;
             margin: 20px 0;
         }
 
         &_btn {
             width: 100%;
 
+            
+
             .btn {
                 width: 100%;
                 font-size: 18px;
+                background: linear-gradient(90.03deg, #0AAEE3 0.05%, #2B3180 99.16%);
+                color: #fff;
+                &:hover{
+                    color: #2B3180;
+                    background: #fff;
+                }
+                &_no-bg{
+                    color: #2B3180;
+                    border: 2px solid #2B3180;
+                    background: none;
+                    &:hover{
+                        border: none;
+                        background: linear-gradient(90.03deg, #0AAEE3 0.05%, #2B3180 99.16%);
+                        color: #fff;
+                    }
+                }
             }
         }
     }
