@@ -65,6 +65,7 @@
 .news_item_btn:hover { background: #0D97D5; color: #fff; transition: 0.2s; }
 
 .calculator { background: linear-gradient(89.95deg, #0D97D5 0.06%, #003F78 99.96%); padding: 60px 0; }
+.calculator .container { max-width: 1355px; }
 .calculator_section_free .calculator_items { background: #fff; border-radius: 5px; margin-top: 60px; }
 .calculator_section_free .calculator_item { display: flex; align-items: center; padding: 20px 15px; border-bottom: 1px solid #C4C4C4; }
 .calculator_section_free .calculator_item:last-child { border-bottom: none; }
@@ -75,26 +76,24 @@
 .calculator_section_paid { margin-top: 60px; }
 .calculator_section_paid .title { margin-bottom: 60px; }
 .calculator_section_paid .calculator_items { display: flex; background: #fff; border-radius: 5px; padding-bottom: 15px; }
-.calculator_section_paid .calculator_item { width: 25%; border-left: 1px solid #C4C4C4; }
-.calculator_section_paid .calculator_item:first-child { border-left: 0; }
-.calculator_section_paid .calculator_item:first-child .calculator_option { padding: 15px 5px; font-size: 16px; justify-content: start; }
-.calculator_section_paid .calculator_item_title { font-weight: bold; font-size: 18px; color: #333; border-bottom: 1px solid #C4C4C4; padding: 25px 0; text-align: center; margin-bottom: 10px; }
+.calculator_section_paid .calculator_item { width: 250px; border-left: 1px solid #C4C4C4; }
+.calculator_section_paid .calculator_item:first-child { width: 460px; border-left: 0; }
+.calculator_section_paid .calculator_item:first-child .calculator_option { height: 100px; padding: 0 20px; justify-content: start; }
+.calculator_section_paid .calculator_item:last-child { width: 365px; }
+.calculator_section_paid .calculator_item_title { display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 18px; color: #333; border-bottom: 1px solid #C4C4C4; height: 75px; text-align: center; margin-bottom: 10px; }
 .calculator_section_paid .calculator_item ul { padding: 0; }
-.calculator_section_paid .calculator_option { list-style: none; padding: 0 15px; height: 60px; display: flex; align-items: center; justify-content: space-between; border-radius: 5px; margin: 5px; font-weight: bold; font-size: 18px; color: #333; cursor: pointer; }
-.calculator_section_paid .calculator_option_icon img { width: 80px; margin-right: 10px; }
+.calculator_section_paid .calculator_option { list-style: none; padding: 0 15px 0 40px; height: 55px; display: flex; align-items: center; justify-content: space-between; border-radius: 5px; margin: 5px; font-weight: bold; font-size: 18px; color: #333; cursor: pointer; }
+.calculator_section_paid .calculator_option_icon img { width: 160px; margin-right: 20px; }
 .calculator_section_paid .calculator_option.active { background: rgba(13, 151, 213, 0.37); cursor: default; pointer-events: none; }
-.calculator_section_paid .calculator_option_count { display: flex; align-items: center; pointer-events: painted; }
+.calculator_section_paid .calculator_option_count { display: flex; align-items: center; font-weight: 800; pointer-events: painted; }
 .calculator_section_paid .calculator_option_count .plus { font-size: 24px; margin-left: 10px; cursor: pointer; }
 .calculator_section_paid .calculator_option_count .minus { font-size: 24px; margin-right: 10px; cursor: pointer; }
-.calculator_order { padding: 0 10px; margin-top: 20px; }
-.calculator_order_descr { font-weight: 500; font-size: 15px; color: #333; margin-bottom: 20px; }
-.calculator_order_item { display: flex; padding: 15px 0; }
-.calculator_order_title { font-weight: 500; font-size: 15px; color: #333; }
-.calculator_order_title span { font-weight: 700; }
-.calculator_order_icon { margin-right: 10px; }
-.calculator_order_icon img { width: 50px; }
-.calculator_order_value { font-weight: 500; font-size: 16px; color: #C4C4C4; width: 30%; text-align: right; }
-.calculator_order_price { font-weight: bold; font-size: 45px; text-align: center; color: #333; margin: 20px 0; }
+.calculator_order { padding: 0 30px; margin-top: 40px; }
+.calculator_order_descr { font-weight: normal; font-size: 18px; color: #333; margin-bottom: 20px; }
+.calculator_order_item { display: flex; }
+.calculator_order_weight { font-weight: normal; font-size: 18px; color: #333; text-align: left; margin-bottom: 50px; }
+.calculator_order_value { font-weight: normal; font-size: 18px; text-align: left; margin-right: 5px; }
+.calculator_order_price { font-weight: bold; font-size: 45px; text-align: left; color: #333; margin: 20px 0; }
 .calculator_order_btn { width: 100%; }
 .calculator_order_btn .btn { width: 100%; font-size: 18px; background: linear-gradient(90.03deg, #0AAEE3 0.05%, #2B3180 99.16%); color: #fff; }
 .calculator_order_btn .btn:hover { color: #2B3180; background: #fff; }

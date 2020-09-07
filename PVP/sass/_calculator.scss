@@ -1,9 +1,12 @@
 .calculator {
     background: linear-gradient(89.95deg, #0D97D5 0.06%, #003F78 99.96%);
     padding: 60px 0;
+   
+    .container{
+        max-width: 1355px;
+    }
 
     &_section_free {
-
         .calculator_items {
             background: #fff;
             border-radius: 5px;
@@ -50,8 +53,8 @@
     }
 
     &_section_paid {
+        
         margin-top: 60px;
-
         .title {
             margin-bottom: 60px;
         }
@@ -64,25 +67,33 @@
         }
 
         .calculator_item {
-            width: 25%;
+            width: 250px;
             border-left: 1px solid #C4C4C4;
             
 
             &:first-child {
+                width: 460px;
                 border-left: 0;
                 .calculator_option {
-                    padding: 15px 5px;
-                    font-size: 16px;
+                    height: 100px;
+                    padding: 0 20px;
                     justify-content: start;
                 }
             }
 
+            &:last-child{
+               width: 365px;
+            }
+
             &_title {
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 font-weight: bold;
                 font-size: 18px;
                 color: #333;
                 border-bottom: 1px solid #C4C4C4;
-                padding: 25px 0;
+                height: 75px;
                 text-align: center;
                 margin-bottom: 10px;
             }
@@ -94,8 +105,8 @@
 
         .calculator_option {
             list-style: none;
-            padding: 0 15px;
-            height: 60px;
+            padding: 0 15px 0 40px;
+            height: 55px;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -109,8 +120,8 @@
             &_icon {
 
                 img {
-                    width: 80px;
-                    margin-right: 10px;
+                    width: 160px;
+                    margin-right: 20px;
                 }
             }
 
@@ -124,7 +135,9 @@
             &_count {
                 display: flex;
                 align-items: center;
-                pointer-events: painted; 
+                font-weight: 800; 
+                pointer-events: painted;
+                
                 
                 .plus {
                     font-size: 24px;
@@ -144,50 +157,39 @@
     }
 
     &_order {
-        padding: 0 10px;
-        margin-top: 20px;
+        padding: 0 30px;
+        margin-top: 40px;
 
         &_descr {
-            font-weight: 500;
-            font-size: 15px;
+            font-weight: normal;
+            font-size: 18px;
             color: #333;
             margin-bottom: 20px;
         }
 
         &_item{
             display: flex;
-            padding: 15px 0;
         }
 
-        &_title {
-            font-weight: 500;
-            font-size: 15px;
+        &_weight {
+            font-weight: normal;
+            font-size: 18px;
             color: #333;
-
-            span {
-                font-weight: 700;
-            }
-        }
-
-        &_icon {
-            margin-right: 10px;
-            img {
-                width: 50px;
-            }
+            text-align: left;
+            margin-bottom: 50px;
         }
 
         &_value {
-            font-weight: 500;
-            font-size: 16px;
-            color: #C4C4C4;
-            width: 30%;
-            text-align: right;
+            font-weight: normal;
+            font-size: 18px;
+            text-align: left;
+            margin-right: 5px;
         }
 
         &_price {
             font-weight: bold;
             font-size: 45px;
-            text-align: center;
+            text-align: left;
             color: #333;
             margin: 20px 0;
         }

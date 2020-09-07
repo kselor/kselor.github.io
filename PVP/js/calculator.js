@@ -22,11 +22,8 @@ $(document).ready(function () {
                 optionTrailer.detach().removeClass('active');
                 optionTrailer.eq(1).appendTo($('.calculator_item:eq(6)')).trigger('click');
                 optionCount.css('display', 'none');
-                $('.calculator_order_title:eq(0)').find('span').html('M1')
-                $('.calculator_order_icon:eq(0)').html('<img src="img/icons/calculator/calc_order_M1.png" alt="">')
-                $('.calculator_order_title:eq(1)').find('span').html('O1, O2')
-                $('.calculator_order_item:eq(1)').css('display', 'flex')
                 $('.calculator_order_descr').html('Транспортные средства, используемые для перевозки пассажиров и имеющие, помимо места водителя, не более восьми мест для сидения.')
+                $('.calculator_order_weight').html($('.calculator_item:eq(6) .calculator_option_title').eq(i).text())
             } else {
                 optionTrailer.detach().removeClass('active');
                 optionWeight.appendTo($('.calculator_item:eq(5)')).eq(0).html('до 3.5 тонн').val('572').trigger('click');
@@ -104,24 +101,18 @@ $(document).ready(function () {
 
 
             if (i == 0) {
-                $('.calculator_order_item:eq(1)').css('display', 'none')
+                $('.calculator_order_item').css('display', 'none')
             }
 
-            if (i == 1) {
-                $('.calculator_order_title:eq(1)').find('span').html('O1, O2')
-                $('.calculator_order_item:eq(1)').css('display', 'flex')
+            if(i > 0){
+                $('.calculator_order_item').css('display', 'flex')
+                $('.calculator_order_weight').html($('.calculator_item:eq(6) .calculator_option_title').eq(i).text())
             }
 
-            if(i > 1){
-                $('.calculator_order_title:eq(1)').find('span').html('O3')
-                $('.calculator_order_item:eq(1)').css('display', 'flex')
+            $('.calculator_order_value').html(totalCount + ' прицеп')
+            if(totalCount > 1){
+            $('.calculator_order_value').html(totalCount + ' прицепа')
             }
-            if(i > 2){
-                $('.calculator_order_title:eq(1)').find('span').html('O4')
-                $('.calculator_order_item:eq(1)').css('display', 'flex')
-            }
-
-            $('.calculator_order_value').html(totalCount + ' шт')
         });
     });
 
