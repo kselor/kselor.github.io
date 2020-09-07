@@ -52,22 +52,11 @@ $(document).ready(function () {
                 optionTrailer.detach().removeClass('active');
                 optionTrailer.eq(0).appendTo($('.calculator_item:eq(6)')).trigger('click')
 
-                if (i == 0) {
-                    $('.calculator_order_title:eq(0)').find('span').html('N1')
-                    $('.calculator_order_icon:eq(0)').html('<img src="img/icons/calculator/calc_order_N1.png" alt="">')
-                }
-
-                if (i == 1) {
-                    $('.calculator_order_title:eq(0)').find('span').html('N2')
-                    $('.calculator_order_icon:eq(0)').html('<img src="img/icons/calculator/calc_order_N2.png" alt="">')
-                }
-
             }
 
             if (i > 1) {
                 optionTrailer.appendTo($('.calculator_item:eq(6)'));
-                $('.calculator_order_title:eq(0)').find('span').html('N3')
-                $('.calculator_order_icon:eq(0)').html('<img src="img/icons/calculator/calc_order_N3.png" alt="">')
+       
             }
 
         });
