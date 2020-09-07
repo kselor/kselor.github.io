@@ -26,10 +26,9 @@ $(document).ready(function () {
                 $('.calculator_order_weight').html($('.calculator_item:eq(6) .calculator_option_title').eq(i).text())
             } else {
                 optionTrailer.detach().removeClass('active');
-                optionWeight.appendTo($('.calculator_item:eq(5)')).eq(0).html('до 3.5 тонн').val('572').trigger('click');
+                optionWeight.appendTo($('.calculator_item:eq(5)')).eq(0).html('<div class="calculator_option_title">до 3,5 тонн</div>').val('572').trigger('click');
                 optionTrailer.eq(0).appendTo($('.calculator_item:eq(6)')).trigger('click');
                 optionCount.css('display', 'flex');
-                $('.calculator_order_descr').html('Транспортные средства, предназначенные для перевозки грузов.')
 
             }
 
@@ -47,7 +46,7 @@ $(document).ready(function () {
             totalPrice = priceWeight + priceTrailer;
             $('.calculator_order_price').html(totalPrice.toLocaleString() + ' ₽')
 
-            
+            $('.calculator_order_descr').html('Грузовой автомобиль, разрешенной максимальной массы ' + $('.calculator_item:eq(5) .calculator_option_title').eq(i).text())
             if (i <= 1) {
                 optionTrailer.detach().removeClass('active');
                 optionTrailer.eq(0).appendTo($('.calculator_item:eq(6)')).trigger('click')

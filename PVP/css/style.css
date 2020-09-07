@@ -93,10 +93,10 @@
 .calculator_order { padding: 0 40px 0 30px; margin-top: 40px; }
 .calculator_order_descr { font-weight: normal; font-size: 18px; color: #000; margin-bottom: 20px; }
 .calculator_order_item { display: flex; }
-.calculator_order_weight { font-weight: normal; font-size: 18px; color: #000; text-align: left; margin-bottom: 50px; }
+.calculator_order_weight { font-weight: normal; font-size: 18px; color: #000; text-align: left; }
 .calculator_order_value { font-weight: normal; font-size: 18px; text-align: left; margin-right: 5px; }
 .calculator_order_price { font-weight: bold; font-size: 45px; text-align: left; color: #000; margin: 40px 0; }
-.calculator_order_btn { width: 100%; padding: 0 25px; }
+.calculator_order_btn { width: 100%; padding: 0 25px; margin-top: 50px; }
 .calculator_order_btn .btn { width: 100%; font-size: 18px; background: linear-gradient(90.03deg, #0AAEE3 0.05%, #2B3180 99.16%); color: #fff; filter: none; }
 .calculator_order_btn .btn:hover { color: #2B3180; background: #fff; border: 2px solid #2B3180; }
 .calculator_order_btn .btn_no-bg { color: #2B3180; border: 2px solid #2B3180; background: none; filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.3)); }
