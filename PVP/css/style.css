@@ -134,7 +134,7 @@
 .footer_social_item:last-child { margin-right: 0; }
 .footer_social_item:hover { opacity: 0.7; transition: 0.2s; }
 
-@media (max-width: 1800px) { .news .container { max-width: 1260px; padding: 0; } }
+@media (max-width: 1800px) { .news .container { max-width: 1260px; padding: 0 5px; } }
 @media (max-width: 1200px) { .header_nav_link { font-size: 16px; }
   .intro_title { font-size: 85px; }
   .calculator .calculator_section_paid .calculator_item_title { font-size: 16px; }
