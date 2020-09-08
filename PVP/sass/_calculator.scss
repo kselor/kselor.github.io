@@ -23,6 +23,11 @@
                 border-bottom: none;
             }
 
+            &_section{
+                display: flex;
+                align-items: center;
+            }
+
             &_icon {
                 img {
                     width: 80px;
@@ -83,6 +88,10 @@
 
             &:last-child{
                width: 355px;
+
+               .calculator_item_title{
+                   pointer-events: none;
+               }
             }
 
             &_title {
@@ -105,10 +114,11 @@
 
         .calculator_option {
             list-style: none;
-            padding: 11px 15px 11px 40px;
+            padding: 0 15px;
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            height: 45px;
+            justify-content: center;
             border-radius: 5px;
             margin: 0 10px;
             font-weight: bold;
@@ -127,9 +137,11 @@
 
             &.active {
                 background: rgba(13, 151, 213, 0.37);
-                height: 55px;
+                height: 50px;
                 cursor: default;
                 pointer-events: none; 
+                justify-content: space-between;
+                padding: 0 15px 0 40px;
             }
 
             &_count {

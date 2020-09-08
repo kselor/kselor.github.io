@@ -65,6 +65,10 @@
         margin-bottom: 100px;
     }
 
+    .container {
+        max-width: 100%;
+    }
+
     .title {
         margin: 80px 0 50px 0;
     }
@@ -74,6 +78,8 @@
         justify-content: flex-end;
         align-items: center;
         margin-right: 10px;
+        max-width: 1220px;
+        margin: 0 auto;
 
         &_link {
             font-weight: 600;
@@ -146,6 +152,7 @@
 
     &_dots {
         margin-top: 20px;
+
         ul {
             display: flex;
             justify-content: center;
@@ -161,12 +168,12 @@
             margin: 15px;
             cursor: pointer;
 
-            &:hover{
+            &:hover {
                 background: #0D97D5;
                 transition: 0.5s;
             }
 
-            &.slick-active{
+            &.slick-active {
                 background: #0D97D5;
             }
 
@@ -178,23 +185,27 @@
 
     &_items {
         display: flex;
-        justify-content: space-between;
         margin-top: 20px;
     }
 
     &_item {
-        display: flex !important;
-        min-width: 550px;
-        border: 1px solid #E8E8ED;
-        padding: 30px 10px;
-        margin: 10px;
-        &:hover{
-            box-shadow: (0 0 5px rgba(0, 0, 0, 0.3));
+        padding: 5px;
+
+        &_inner {
+            display: flex !important;
+            border: 1px solid #E8E8ED;
+            padding: 30px 10px;
+            max-width: 600px;
+            margin: 0 auto;
+
+            &:hover {
+                box-shadow: (0 0 5px rgba(0, 0, 0, 0.3));
+            }
         }
-        
 
         &_img {
             min-width: 260px;
+            max-width: 260px;
             height: 260px;
             background-size: cover/center;
             position: relative;
@@ -256,7 +267,7 @@
     }
 }
 
-.map{
+.map {
     border-top: 1px solid #d8d5d5;
-    overflow: hidden;  
+    overflow: hidden;
 }
